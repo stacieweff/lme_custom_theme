@@ -9,6 +9,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #333;
+  margin: 0;
 }
 
 a:link,
@@ -28,10 +29,6 @@ div.container {
   padding-right: 20px; */
 }
 
-/*Header Styles*/
-.site-header {
-
-}
 .company-container {
   display: flex;
 }
@@ -70,6 +67,12 @@ div.container {
 }
 
 /*Site Header Menu*/
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 15px 10px;
+}
 
 .site-header nav ul li {
   margin-right: 5px;
@@ -79,7 +82,7 @@ div.container {
 .site-header nav ul li a:visited {
   display: block;
   padding: 10px 18px;
-  border: 1px solid #BBB;
+  /* border: 1px solid #BBB; */
   border-bottom: none;
   text-decoration: none;
 }
@@ -96,8 +99,46 @@ div.container {
   color: #fff;
 }
 
+.site-footer {
+  border-top: 1px solid #999;
+}
 .site-footer nav ul li {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px dotted #BBB;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Widget overlapping main image*/
+.main-image-widget {
+    position: absolute;
+    top: 300px;
+    background-color: #444;
+    color: #fff;
+    padding: 45px;
+    text-align: center;
+    right: 150px;
+    font-size: 16px;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    line-height: 35px;
+}
+
+.main-image-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-info-title {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-image-widget {
+    width: 100%;
+  }
 }
