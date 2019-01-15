@@ -26,28 +26,53 @@
       </ul>
     </div>
   </div>
-    <!-- <div class="home-columns clearfix">
-      <div class="one-half">
-        <?php
-        //opinion posts start here
-        //&orderby=title&order=ASC
-        $deliveryPosts = new WP_Query('cat=2&posts_per_page=2');
-               if ($deliveryPosts->have_posts()) :
-                 while ($deliveryPosts->have_posts()) : $deliveryPosts->the_post(); ?>
+    <div class="home-columns clearfix">
+      <div class="news-block-wrapper">
+        <div class="news-block-heading"><h1>Recent News</h1></div>
+        <div class="news-block-container">
+          <?php
+          //opinion posts start here
+          //&orderby=title&order=ASC
+          $deliveryPosts = new WP_Query('cat=2&posts_per_page=6');
+                 if ($deliveryPosts->have_posts()) :
+                   while ($deliveryPosts->have_posts()) : $deliveryPosts->the_post(); ?>
 
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <?php the_excerpt(); ?>
+                   <div class="news-block">
+                     <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
+                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                         <div class="text-container">
+                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                           <div class="news-excerpt"><?php the_excerpt(); ?></div>
+                         </div>
 
-                 <?php endwhile;
+                       </div>
+                     </div>
 
-               else :
-                 echo '<p>No content found</p>';
+                   </div>
 
-               endif;
-               wp_reset_postdata();
-               ?>
+                    <!-- <article class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
+
+                      <div class="post-thumbnail">
+                         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                      </div>
+
+                      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                      <?php the_excerpt(); ?>
+
+                    </article> -->
+
+                   <?php endwhile;
+
+                 else :
+                   echo '<p>No content found</p>';
+
+                 endif;
+                 wp_reset_postdata();
+            ?>
+        </div>
       </div>
-      <div class="one-half last">
+
+      <!-- <div class="one-half last">
         <?php
         $newsPosts = new WP_Query('cat=3&posts_per_page=2');
                if ($newsPosts->have_posts()) :
@@ -64,8 +89,8 @@
                endif;
                wp_reset_postdata();
         ?>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
 </div>
 
 <?php

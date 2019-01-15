@@ -142,3 +142,41 @@ img {
     width: 100%;
   }
 }
+
+/*thumbnails*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.has-thumbnail {
+  position: relative;
+  /* padding-left: 200px; */
+}
+
+.post-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*homepage*/
+.news-block-wrapper {
+  margin: 50px;
+}
+
+.news-block-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-block {
+    width: 430px;
+    padding: 17px;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #cecece;
+    margin: 20px;
+    background-color: #eee;
+}
