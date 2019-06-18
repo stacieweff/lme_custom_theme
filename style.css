@@ -100,13 +100,33 @@ div.container {
 }
 
 .site-footer {
-  border-top: 1px solid #999;
+  border-top: 1px solid #333;
+  background-color: #999;
+  padding: 25px;
 }
 .site-footer nav ul li {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px dotted #BBB;
 }
+.footer-nav-links {
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+.footer-company-info {
+  padding-top: 25px;
+  border-top: 1px solid #fff;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo {
+  margin-right: 10px;
+}
+
 
 img {
   max-width: 100%;
