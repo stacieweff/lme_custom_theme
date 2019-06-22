@@ -3,3 +3,249 @@ Theme Name: LMECustomTheme
 Author: Stacie Weffelmeyer
 Version: 1.0
 */
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+a:link,
+a:visited {
+  color: #006ec3;
+}
+
+p {
+  line-height: 1.65rem;
+}
+
+/*General Layout*/
+div.container {
+  /* max-width: 920px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; */
+}
+
+.company-container {
+  display: flex;
+}
+.company-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  justify-content: center;
+}
+.company-name {
+  font-size: 18px;
+}
+.social-icons {
+  display: flex;
+}
+
+/*Navigtion Menus*/
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after {
+  content: "";
+  display: table;
+}
+.site-nav ul:after {
+  clear: both;
+}
+.site-nav ul {
+  *zoom: 1;
+}
+.site-nav ul li {
+  list-style: none;
+  float: left;
+}
+
+/*Site Header Menu*/
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 15px 10px;
+}
+
+.site-header nav ul li {
+  margin-right: 5px;
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+  display: block;
+  padding: 10px 18px;
+  /* border: 1px solid #BBB; */
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.site-header nav ul li a:hover {
+  background-color: #ECECEC
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+  background-color: #006ec3;
+  color: #fff;
+}
+
+.site-footer {
+  border-top: 1px solid #333;
+  background-color: #999;
+  padding: 25px;
+}
+.site-footer nav ul li {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px dotted #BBB;
+}
+.footer-nav-links {
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+.footer-company-info {
+  padding-top: 25px;
+  border-top: 1px solid #fff;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo {
+  margin-right: 10px;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Widget overlapping main image*/
+.main-image-widget {
+    position: absolute;
+    top: 300px;
+    background-color: #444;
+    color: #fff;
+    padding: 45px;
+    text-align: center;
+    right: 150px;
+    font-size: 16px;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    line-height: 35px;
+}
+
+.main-image-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-info-title {
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-image-widget {
+    width: 100%;
+  }
+}
+
+/*thumbnails*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.has-thumbnail {
+  position: relative;
+  /* padding-left: 200px; */
+}
+
+.post-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*homepage*/
+.news-block-wrapper {
+  margin: 50px;
+}
+
+.news-block-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-block {
+    width: 375px;
+    height: 300px;
+    padding: 17px;
+    overflow-y: auto;
+    /* border: 1px solid #cecece; */
+    margin: 20px;
+    background-color: #eee;
+    box-shadow: 3px 4px #999;
+    border: 1px solid #707070;
+}
+
+.apparatus-dealer-wrapper {
+  background-color: #E4E4E4;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.apparatus-dealer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apparatus-dealer-block {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  box-shadow: 3px 4px #999;
+  border: 1px solid #707070;
+}
+
+
+.vendor-wrapper {
+  margin: 50px;
+}
+
+.vendor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vendor-block {
+  width: 300px;
+  height: 170px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  box-shadow: 3px 4px #999;
+  border: 1px solid #707070;
+}
