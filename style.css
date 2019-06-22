@@ -192,11 +192,60 @@ img {
 }
 
 .news-block {
-    width: 430px;
-    padding: 17px;
+    width: 375px;
     height: 300px;
+    padding: 17px;
     overflow-y: auto;
-    border: 1px solid #cecece;
+    /* border: 1px solid #cecece; */
     margin: 20px;
     background-color: #eee;
+    box-shadow: 3px 4px #999;
+    border: 1px solid #707070;
+}
+
+.apparatus-dealer-wrapper {
+  background-color: #E4E4E4;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.apparatus-dealer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apparatus-dealer-block {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  box-shadow: 3px 4px #999;
+  border: 1px solid #707070;
+}
+
+
+.vendor-wrapper {
+  margin: 50px;
+}
+
+.vendor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vendor-block {
+  width: 300px;
+  height: 170px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+  box-shadow: 3px 4px #999;
+  border: 1px solid #707070;
 }
