@@ -21,12 +21,21 @@ p {
   line-height: 1.65rem;
 }
 
+
 /*General Layout*/
 div.container {
   /* max-width: 920px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px; */
+}
+
+article.post {
+  border-bottom: 2px dotted #999;
+}
+
+article.post:last-of-type {
+  border-bottom: none;
 }
 
 .company-container {
@@ -163,6 +172,33 @@ img {
   }
 }
 
+/*main column*/
+.main-column {
+  width: 66%;
+  float: left;
+}
+
+.secondary-column {
+  width: 30%;
+  float: right;
+}
+
+/*post styles*/
+
+.post h2 {
+  margin-bottom: 0;
+}
+
+p.post-info {
+  font-size: 87%;
+  color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+  color: #999;
+}
+
 /*thumbnails*/
 img {
   max-width: 100%;
@@ -175,9 +211,11 @@ img {
 }
 
 .post-thumbnail {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
+  min-width: 200px;
+  max-width: 200px;
 }
 
 /*standard*/
@@ -264,4 +302,49 @@ h1 {
 .page-content {
   margin: 50px;
   font-size: 16px;
+}
+
+.wp-block-image {
+  max-width: 100%;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wp-block-image .aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 166px;
+}
+
+.background-image-stripe {
+  background-color: #9FA2A3;
+    height: 450px;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    top: -55px;
+}
+
+/* category page styles */
+.category-content {
+  margin: 50px;
+}
+
+.category-post {
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 4px #999;
+  border: 1px solid #707070;
+  margin: 20px;
+}
+
+.post-content {
+  margin-left: 20px;
 }
