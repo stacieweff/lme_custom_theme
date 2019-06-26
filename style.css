@@ -180,6 +180,17 @@ img {
   left: 0;
 }
 
+/*standard*/
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 /*homepage*/
 .news-block-wrapper {
   margin: 50px;
@@ -248,4 +259,9 @@ img {
   margin: 25px;
   box-shadow: 3px 4px #999;
   border: 1px solid #707070;
+}
+
+.page-content {
+  margin: 50px;
+  font-size: 16px;
 }
