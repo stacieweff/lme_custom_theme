@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <nav class="site-nav">
+    <nav id="main-nav" class="site-nav">
       <?php
       $args = array(
         'theme_location' => 'primary'

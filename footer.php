@@ -1,6 +1,6 @@
 <footer class="site-footer">
   <div class="footer-nav-links">
-    <nav class="site-nav">
+    <nav id="main-nav" class="main-nav">
       <?php
           $args = array(
             'theme_location' => 'footer'
