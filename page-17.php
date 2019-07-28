@@ -6,7 +6,8 @@ if (have_posts()) :
   while (have_posts()) : the_post(); ?>
 
   <article class="post page">
-    <div class="column-container clearfix">
+    <div class="background-image-stripe"> </div>
+    <div class="content-wrapper">
       <div class="title-column">
         <!-- <h2><?php the_title(); ?></h2> -->
       </div>

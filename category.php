@@ -1,7 +1,9 @@
 <?php
 get_header();?>
 
-<div class="category-content">
+<div class="background-image-stripe"> </div>
+    <div class="content-wrapper-cat">
+<!-- <div class="category-content"> -->
 <h1 class="page-header headline"><?php single_cat_title(); ?></h1>
   <div class="">
     <?php
