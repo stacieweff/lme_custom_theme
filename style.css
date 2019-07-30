@@ -8,7 +8,7 @@ body {
   /* font-family: Arial, sans-serif; */
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  color: #333;
+  color: #808080;
   margin: 0;
 }
 
@@ -55,11 +55,65 @@ article.post:last-of-type {
 }
 
 /*Navigtion Menus*/
-.site-nav ul {
+
+#main-nav   {
+  /* height: 50px; set to the height you want your menu to be */
+  margin: 0 0 10px; /* just to give some spacing */
+}
+#main-nav ul    {
+  margin: 0; padding: 0; /* only needed if you have not done a CSS reset */
+}
+#main-nav li    {
+  display: block;
+  float: left;
+  line-height: 30px; /* this should be the same as your #main-nav height */
+  /* height: 50px; this should be the same as your #main-nav height */
+  margin: 0; padding: 0; /* only needed if you don't have a reset */
+  position: relative; /* this is needed in order to position sub menus */
+}
+#main-nav li a  {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+#main-nav .current-menu-item a, #main-nav .current_page_item a, #main-nav a:hover {
+  color: #000;
+  background: #ccc;
+}
+
+#main-nav ul ul { /* this targets all sub menus */
+  display: none; /* hide all sub menus from view */
+  position: absolute;
+  top: 30px; /* this should be the same height as the top level menu -- height + padding + borders */
+}
+#main-nav ul ul li { /* this targets all submenu items */
+  float: none; /* overwriting our float up above */
+  width: 150px; /* set to the width you want your sub menus to be. This needs to match the value we set below */
+}
+#main-nav ul ul li a { /* target all sub menu item links */
+  padding: 5px 10px; /* give our sub menu links a nice button feel */
+}
+#main-nav ul li:hover > ul {
+  display: block; /* show sub menus when hovering over a parent */
+}
+#main-nav ul ul li ul {
+  /* target all second, third, and deeper level sub menus */
+  left: 150px; /* this needs to match the sub menu width set above -- width + padding + borders */
+  top: 0; /* this ensures the sub menu starts in line with its parent item */
+}
+
+.sub-menu {
+  background-color: #fff;
+}
+
+/* .site-nav ul {
   margin: 0;
   padding: 0;
 }
-
+.site-nav a:hover {
+  background-color: #ECECEC
+}
 .site-nav ul:before, .site-nav ul:after {
   content: "";
   display: table;
@@ -67,13 +121,100 @@ article.post:last-of-type {
 .site-nav ul:after {
   clear: both;
 }
-.site-nav ul {
-  *zoom: 1;
-}
 .site-nav ul li {
   list-style: none;
   float: left;
+  position: relative;
+  margin-right: 5px;
 }
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+  display: block;
+  padding: 10px 18px;
+  border: 1px solid #BBB;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.site-nav ul li ul {
+	display: none;
+}
+.site-nav ul li:hover ul {
+	background: #fff url(images/tab-bg3.gif) repeat-x bottom;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+	display: block;
+	padding: 5px 10px;
+	position: absolute;
+	left: 0px;
+	top: 38px;
+	width: 150px;
+  z-index: 999;
+  color: yellow;
+}
+
+.site-nav ul li.current-menu-item a:link,
+.site-nav ul li.current-menu-item a:visited,
+.site-nav ul li.current-page-ancestor a:link,
+.site-nav ul li.current-page-ancestor a:visited {
+  background-color: red;
+  color: #fff;
+} */
+
+/* --------------------- */
+/* .site-nav ul li.current-menu-item ul.sub-menu li a:link {
+  background-color: green;
+} */
+
+/* 
+.site-nav ul li.current_page_item a:link {
+  background-color: #006ec3;
+  color: #fff;
+}
+
+.site-nav ul li.menu-item-type-taxonomy .current-menu-item a:link,
+.site-nav ul li.menu-item-type-taxonomy .current-menu-item a:visited {
+  background-color: #006ec3;
+  color: #fff;
+}  */
+
+/* .site-nav ul li.current-menu-item ul li a:link {
+  color: pink;
+} */
+
+/* .site-nav ul li:hover:last-child ul {
+	left: auto;
+	right: 0px;
+} */
+
+/* .site-nav ul li ul li a:link {
+  color: yellow;
+} */
+
+/* .site-nav ul li:hover ul li a:link {
+	background: none !important;
+	border-bottom: 1px solid #efefef;
+	color: #222;
+	display: block;
+	float: left;
+	font: 10px/14px helvetica, arial, sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	padding: 5px  0 5px;
+	position: relative;
+  width: 150px;
+  color: yellow;
+} */
+
+/* .site-nav ul li:hover ul li:last-child a {
+	border-bottom: none;
+} */
+
+/* .site-nav ul li:hover ul li a:hover {
+  color: #333;
+  font-weight: bold;
+} */
 
 /*Site Header Menu*/
 .site-header {
@@ -81,31 +222,6 @@ article.post:last-of-type {
   justify-content: space-between;
   align-items: flex-end;
   margin: 15px 10px;
-}
-
-.site-header nav ul li {
-  margin-right: 5px;
-}
-
-.site-header nav ul li a:link,
-.site-header nav ul li a:visited {
-  display: block;
-  padding: 10px 18px;
-  /* border: 1px solid #BBB; */
-  border-bottom: none;
-  text-decoration: none;
-}
-
-.site-header nav ul li a:hover {
-  background-color: #ECECEC
-}
-
-.site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited,
-.site-header nav ul li.current-page-ancestor a:link,
-.site-header nav ul li.current-page-ancestor a:visited {
-  background-color: #006ec3;
-  color: #fff;
 }
 
 .site-footer {
@@ -300,8 +416,31 @@ h1 {
 }
 
 .page-content {
-  margin: 50px;
+  /* margin: 50px;
+  font-size: 16px; */
+}
+
+.content-wrapper {
+  margin: 0 75px;
   font-size: 16px;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.content-wrapper-cat {
+  margin: 0 75px;
+  font-size: 16px;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  top: 180px;
+  background-color: #fff;
+  height: 100%;
+  margin-top: -448px;
+  padding: 20px;
 }
 
 .wp-block-image {
@@ -309,7 +448,7 @@ h1 {
     margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
-    min-height: 560px;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,12 +463,12 @@ h1 {
 }
 
 .background-image-stripe {
-  background-color: #9FA2A3;
+  background-color: #E4E4E4;
     height: 450px;
-    position: relative;
+    /* position: relative; */
     z-index: -1;
     width: 100%;
-    top: -55px;
+    /* top: -55px; */
 }
 
 /* category page styles */

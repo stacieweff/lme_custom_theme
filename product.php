@@ -1,5 +1,7 @@
 <?php
 
+/*Template Name: Product */
+
 get_header();
 
 if (have_posts()) :
@@ -8,14 +10,9 @@ if (have_posts()) :
   <article class="post page">
     <div class="background-image-stripe"> </div>
     <div class="content-wrapper">
-      <div class="title-column">
-        <!-- <h2><?php the_title(); ?></h2> -->
-      </div>
-      <div class="text-column">
-        <?php the_content(); ?>
-      </div>
+      <h2><?php the_title(); ?></h2>
+      <?php the_content(); ?>
     </div>
-
   </article>
 
   <?php endwhile;

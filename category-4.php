@@ -5,6 +5,20 @@ get_header();?>
     <div class="content-wrapper-cat">
 <!-- <div class="category-content"> -->
 <h1 class="page-header headline"><?php single_cat_title(); ?></h1>
+
+<div>We are distributors for: 
+  <ul class="main-info-offerings">
+        <li>FIRE APPARATUS</li>
+        <li>BREATHING APPARATUS</li>
+        <li>PERSONAL PROTECTIVE EQUIPMENT</li>
+        <li>TEST INSTRUMENTS</li>
+        <li>HOSE, NOZZLES, FITTINGS & ADAPTER TOOLS</li>
+        <li>EXTRICATION EQUIPMENT SYSTEMS</li>
+  </ul>
+
+  <p>Therefore, we can help with many different products working with all of our Vendors. Browse our products listed, but if you don't see something, give us a call and we can most likely still help you get it!</p>
+</div>
+<h2>Featured Products</h2>
   <div class="">
     <?php
     if (have_posts()) :

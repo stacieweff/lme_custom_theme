@@ -4,6 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width-device-width">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/xpl7mti.css">
   <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
 </head>
@@ -29,7 +30,7 @@
         </div>
       </div>
     </div>
-    <nav class="site-nav">
+    <nav id="main-nav" class="site-nav">
       <?php
       $args = array(
         'theme_location' => 'primary'
