@@ -247,20 +247,33 @@ article.post:last-of-type {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px dotted #BBB;
+  list-style: none;
 }
 .footer-nav-links {
   padding-bottom: 25px;
   display: flex;
   justify-content: center;
 }
+.site-footer nav ul li a:link,
+.site-footer nav ul li a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+ul#menu-footer-menu-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
 .footer-company-info {
   padding-top: 25px;
   border-top: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
 }
 .footer-left {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .footer-logo {
   margin-right: 10px;
