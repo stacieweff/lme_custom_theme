@@ -21,13 +21,13 @@
         <div class="company-name">
           <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
-        <!-- <h5><?php bloginfo('description'); ?></h5> -->
+        <!-- <div class="phone-number"><?php bloginfo('description'); ?></div> -->
         <div class="phone-number">(636) 332-6985</div>
-        <div class="social-icons">
+        <!-- <div class="social-icons">
           <div class="facebook">F</div>
           <div class="twitter">T</div>
           <div class="instagram">I</div>
-        </div>
+        </div> -->
       </div>
     </div>
     <nav id="main-nav" class="site-nav">

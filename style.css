@@ -46,9 +46,16 @@ article.post:last-of-type {
   flex-direction: column;
   margin-left: 15px;
   justify-content: center;
+  color: #808080;
+  font-size: 16px;
 }
 .company-name {
-  font-size: 18px;
+  font-size: 22px;
+}
+.company-name a:link,
+.company-name a:visited {
+  color: #808080;
+  text-decoration: none;
 }
 .social-icons {
   display: flex;
@@ -70,16 +77,23 @@ article.post:last-of-type {
   /* height: 50px; this should be the same as your #main-nav height */
   margin: 0; padding: 0; /* only needed if you don't have a reset */
   position: relative; /* this is needed in order to position sub menus */
+  font-size: 16px;
+  font-weight: 500;
 }
 #main-nav li a  {
   display: block;
   height: 30px;
   line-height: 30px;
   padding: 0 15px;
+  color: #868481;
+  text-decoration: none;
 }
 #main-nav .current-menu-item a, #main-nav .current_page_item a, #main-nav a:hover {
-  color: #000;
-  background: #ccc;
+  color: #868481;
+  /* background: #ccc; */
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 #main-nav ul ul { /* this targets all sub menus */
