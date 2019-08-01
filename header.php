@@ -30,13 +30,16 @@
         </div> -->
       </div>
     </div>
-    <nav id="main-nav" class="site-nav">
-      <?php
-      $args = array(
-        'theme_location' => 'primary'
-      );
-      ?>
+    <div class="right-header">
+      <div class="main-search"><?php get_search_form(); ?></div>
+      <nav id="main-nav" class="site-nav">
+        <?php
+        $args = array(
+          'theme_location' => 'primary'
+        );
+        ?>
 
-      <?php wp_nav_menu( $args ); ?>
-    </nav>
+        <?php wp_nav_menu( $args ); ?>
+      </nav>
+    </div>
   </header>

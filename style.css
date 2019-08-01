@@ -61,6 +61,18 @@ article.post:last-of-type {
   display: flex;
 }
 
+.right-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-search {
+  position: absolute;
+  top: 30px;
+}
+
 /*Navigtion Menus*/
 
 #main-nav   {
@@ -238,6 +250,7 @@ article.post:last-of-type {
   margin: 15px 10px;
 }
 
+/*footer links*/
 .site-footer {
   border-top: 1px solid #333;
   background-color: #999;
