@@ -39,13 +39,14 @@
 
                    <div class="news-block">
                      <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
-                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
-                         <div class="text-container">
-                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                           <!-- <div class="news-excerpt"><?php the_excerpt(); ?></div> -->
-                         </div>
+                       <div class="background-thumbnail">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-thumbnail'); ?></a>
                        </div>
                      </div>
+                     <div class="text-container">
+                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                           <!-- <div class="news-excerpt"><?php the_excerpt(); ?></div> -->
+                      </div>
                    </div>
 
                     <!-- <article class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
@@ -83,13 +84,13 @@
 
                    <div class="news-block">
                      <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
-                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
-                         <div class="text-container">
-                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                           <!-- <div class="news-excerpt"><?php the_excerpt(); ?></div> -->
-                         </div>
+                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-thumbnail'); ?></a>
                        </div>
                      </div>
+                     <div class="text-container">
+                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                           <!-- <div class="news-excerpt"><?php the_excerpt(); ?></div> -->
+                      </div>
                    </div>
 
                     <!-- <article class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
