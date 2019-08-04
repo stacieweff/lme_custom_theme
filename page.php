@@ -7,8 +7,6 @@ if (have_posts()) :
 
 
   <article class="post page">
-    <div class="background-image-stripe"> </div>
-    testing
     <div class="content-wrapper">
       <div class="title-column">
         <h2><?php the_title(); ?></h2>
@@ -17,7 +15,7 @@ if (have_posts()) :
         <?php the_content(); ?>
       </div>
     </div>
-
+    <div class="background-image-stripe"> </div>
   </article>
 
   <?php endwhile;
