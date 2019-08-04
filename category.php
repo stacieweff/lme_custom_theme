@@ -1,7 +1,5 @@
 <?php
 get_header();?>
-
-<div class="background-image-stripe"> </div>
     <div class="content-wrapper-cat">
 <!-- <div class="category-content"> -->
 <h1 class="page-header headline"><?php single_cat_title(); ?></h1>
@@ -63,7 +61,7 @@ if ($categories) {
     <?php posts_nav_link(' &#8212; ', __('&laquo; Previous Page'), __('Next Page &raquo;')); ?>
   </div>
 </div>
-
+<div class="background-image-stripe"> </div>
 <?php
 get_footer();
 ?>

@@ -587,11 +587,11 @@ h1 {
   top: 180px;
   background-color: #fff;
   height: 100%;
-  margin-top: -448px;
+  /* margin-top: -448px; */
   padding: 20px;
 }
 
-.wp-block-image {
+/* .wp-block-image {
   max-width: 100%;
   margin-bottom: 1em;
   margin-left: 0;
@@ -601,22 +601,22 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
-.wp-block-image .aligncenter {
+/* .wp-block-image .aligncenter {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   top: 166px;
-}
+} */
 
 .background-image-stripe {
   background-color: #E4E4E4;
   height: 450px;
-  /* position: relative; */
+  position: absolute;
   z-index: -1;
   width: 100%;
-  /* top: -55px; */
+  top: 175px;
 }
 
 /* category page styles */
