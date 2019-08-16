@@ -11,7 +11,7 @@ get_header();?>
   <article class="category-post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
   <!--post thumbnail-->
   <div class="post-thumbnail">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-thumbnail'); ?></a>
   </div>
   <div class="post-content">
     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

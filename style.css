@@ -436,8 +436,8 @@ img {
   /* position: absolute;
   top: 0;
   left: 0; */
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .background-thumbnail {
@@ -584,10 +584,8 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  top: 180px;
   background-color: #fff;
   height: 100%;
-  /* margin-top: -448px; */
   padding: 20px;
 }
 
@@ -634,6 +632,13 @@ h1 {
   box-shadow: 3px 4px #999;
   border: 1px solid #707070;
   margin: 20px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.category-post:hover {
+  border: 1px solid #a12026;
+  box-shadow: 3px 3px 4px #a12026;
 }
 
 .post-content {
