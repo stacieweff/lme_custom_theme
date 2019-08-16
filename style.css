@@ -75,7 +75,7 @@ article.post:last-of-type {
 /*search*/
 .main-search {
   position: absolute;
-  top: 60px;
+  top: 30px;
   width: 270px;
 }
 
@@ -591,6 +591,10 @@ h1 {
   padding: 20px;
 }
 
+.wp-block-cover {
+  top: 10px;
+}
+
 /* .wp-block-image {
   max-width: 100%;
   margin-bottom: 1em;
@@ -612,11 +616,11 @@ h1 {
 
 .background-image-stripe {
   background-color: #E4E4E4;
-  height: 450px;
+  height: 430px;
   position: absolute;
   z-index: -1;
   width: 100%;
-  top: 175px;
+  top: 138px;
 }
 
 /* category page styles */
