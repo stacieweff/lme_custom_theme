@@ -8,11 +8,24 @@ if (have_posts()) :
   while (have_posts()) : the_post(); ?>
 
   <article class="post page">
-    <div class="background-image-stripe"> </div>
     <div class="content-wrapper">
-      <h2><?php the_title(); ?></h2>
-      <?php the_content(); ?>
+    <nav class="site nav children-links clearfix">
+      <span class="parent_link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()) ?>"><?php echo get_the_title(get_top_ancestor_id()) ?></a></span>
+      <ul>
+        <?php
+          $args = array(
+            'child_of' => get_top_ancestor_id(),
+            'title_li' => ''
+          )
+          ?>
+          <?php wp_list_pages($args) ?>
+      </ul>
+    </nav>
+    <br/>
+    <h2><?php the_title(); ?></h2>
+    <?php the_content(); ?>
     </div>
+    <div class="background-image-stripe"> </div>
   </article>
 
   <?php endwhile;

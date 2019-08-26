@@ -6,7 +6,7 @@ Version: 1.0
 
 body {
   /* font-family: Arial, sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #808080;
   margin: 0;
@@ -20,7 +20,6 @@ a:visited {
 p {
   line-height: 1.65rem;
 }
-
 
 /*General Layout*/
 div.container {
@@ -75,23 +74,23 @@ article.post:last-of-type {
 /*search*/
 .main-search {
   position: absolute;
-  top: 30px;
+  top: 65px;
   width: 270px;
 }
 
 form#searchform {
-  color: #DEDEDE;
+  color: #dedede;
 }
 
 input#s {
   color: #868481;
   height: 20px;
-  border: 1px solid #DEDEDE;
+  border: 1px solid #dedede;
   width: 175px;
 }
 
 input#searchsubmit {
-  background-color: #DEDEDE;
+  background-color: #dedede;
   border: none;
   padding: 5px 10px;
   color: #fff;
@@ -100,7 +99,7 @@ input#searchsubmit {
 
 .search-results-heading {
   padding: 5px;
-  border-top: 1px solid #E4E4E4;
+  border-top: 1px solid #e4e4e4;
   text-align: center;
 }
 
@@ -159,6 +158,7 @@ input#searchsubmit {
   position: absolute;
   top: 30px;
   /* this should be the same height as the top level menu -- height + padding + borders */
+  z-index: 99;
 }
 
 #main-nav ul ul li {
@@ -166,7 +166,7 @@ input#searchsubmit {
   float: none;
   /* overwriting our float up above */
   width: 150px;
-  /* set to the width you want your sub menus to be. This needs to match the value we set below */
+  /* set to the width you want your sub menus to be. This needs xto match the value we set below */
 }
 
 #main-nav ul ul li a {
@@ -175,7 +175,7 @@ input#searchsubmit {
   /* give our sub menu links a nice button feel */
 }
 
-#main-nav ul li:hover>ul {
+#main-nav ul li:hover > ul {
   display: block;
   /* show sub menus when hovering over a parent */
 }
@@ -301,12 +301,74 @@ input#searchsubmit {
   font-weight: bold;
 } */
 
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav ul:before,
+.site-nav ul:after {
+  content: "";
+  display: table;
+}
+.site-nav ul:after {
+  clear: both;
+}
+.site-nav ul {
+  *zoom: 1;
+}
+.site-nav ul li {
+  list-style: none;
+  float: left;
+}
+
+/*children links*/
+.children-links {
+  margin-bottom: 20px;
+  font-size: 80%;
+}
+
+.children-links a:link,
+.children-links a:visited {
+  text-decoration: none;
+}
+
+.children-links ul {
+  float: left;
+}
+
+.children-links li {
+  margin-right: 20px;
+}
+
+.children-links .parent-link {
+  float: left;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+  color: #333;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  cursor: default;
+}
+
 /*Site Header Menu*/
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 10px 10px 0 10px;
+  background-color: #fff;
 }
 
 /*footer links*/
@@ -319,7 +381,7 @@ input#searchsubmit {
 .site-footer nav ul li {
   margin-right: 10px;
   padding-right: 10px;
-  border-right: 1px dotted #BBB;
+  border-right: 1px dotted #bbb;
   list-style: none;
 }
 
@@ -357,7 +419,6 @@ ul#menu-footer-menu-links {
 .footer-logo {
   margin-right: 10px;
 }
-
 
 img {
   max-width: 100%;
@@ -507,7 +568,7 @@ h1 {
 }
 
 .apparatus-dealer-wrapper {
-  background-color: #E4E4E4;
+  background-color: #e4e4e4;
   padding: 50px;
   margin-bottom: 50px;
 }
@@ -534,7 +595,6 @@ h1 {
   border: 1px solid #a12026;
   box-shadow: 3px 3px 4px #a12026;
 }
-
 
 .vendor-wrapper {
   margin: 50px;
@@ -575,6 +635,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  /* background-color: #fff; */
 }
 
 .content-wrapper-cat {
@@ -613,12 +674,12 @@ h1 {
 } */
 
 .background-image-stripe {
-  background-color: #E4E4E4;
+  background-color: #e4e4e4;
   height: 430px;
   position: absolute;
   z-index: -1;
   width: 100%;
-  top: 138px;
+  top: 169px;
 }
 
 /* category page styles */
