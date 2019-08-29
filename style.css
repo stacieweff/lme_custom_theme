@@ -74,7 +74,7 @@ article.post:last-of-type {
 /*search*/
 .main-search {
   position: absolute;
-  top: 65px;
+  top: 30px;
   width: 270px;
 }
 
@@ -345,7 +345,7 @@ input#searchsubmit {
   float: left;
   margin-right: 20px;
   padding-right: 20px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #333;
   font-size: 120%;
   font-weight: bold;
 }
@@ -369,6 +369,17 @@ input#searchsubmit {
   align-items: flex-end;
   padding: 10px 10px 0 10px;
   background-color: #fff;
+}
+
+/* .site-header nav ul li.current-menu-item a:link, */
+/* .site-header nav ul li.current-menu-item a:visited, */
+.site-header nav ul li.current-page-ancestor a:link {
+  /* .site-header nav ul li.current-page-ancestor a:visited { */
+  color: #868481;
+  /* background: #ccc; */
+  border-bottom: 1px solid #a12026;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /*footer links*/
@@ -679,7 +690,7 @@ h1 {
   position: absolute;
   z-index: -1;
   width: 100%;
-  top: 169px;
+  top: 137px;
 }
 
 /* category page styles */
@@ -704,4 +715,26 @@ h1 {
 
 .post-content {
   margin-left: 20px;
+}
+
+/* Products Page */
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products-card {
+  position: relative;
+  width: 375px;
+  height: 300px;
+  border: 1px solid #707070;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 3px 4px #999;
+}
+
+.products-card:hover {
+  border: 1px solid #a12026;
+  box-shadow: 3px 3px 4px #a12026;
 }
