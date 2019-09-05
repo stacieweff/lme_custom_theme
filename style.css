@@ -175,7 +175,7 @@ input#searchsubmit {
   /* give our sub menu links a nice button feel */
 }
 
-#main-nav ul li:hover > ul {
+#main-nav ul li:hover>ul {
   display: block;
   /* show sub menus when hovering over a parent */
 }
@@ -311,12 +311,15 @@ input#searchsubmit {
   content: "";
   display: table;
 }
+
 .site-nav ul:after {
   clear: both;
 }
+
 .site-nav ul {
   *zoom: 1;
 }
+
 .site-nav ul li {
   list-style: none;
   float: left;
@@ -735,6 +738,22 @@ h1 {
 }
 
 .products-card:hover {
+  border: 1px solid #a12026;
+  box-shadow: 3px 3px 4px #a12026;
+}
+
+/*search*/
+.content-post {
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 4px #999;
+  border: 1px solid #707070;
+  margin: 5px;
+  height: 230px;
+  overflow: auto;
+}
+
+.content-post:hover {
   border: 1px solid #a12026;
   box-shadow: 3px 3px 4px #a12026;
 }
