@@ -705,8 +705,8 @@ h1 {
 .background-image-stripe {
   background-color: #e4e4e4;
   background-image: linear-gradient(0deg, black, gray);
-  /* height: 430px; */
-  height: 230px;
+  height: 430px;
+  /* height: 230px; */
   position: absolute;
   z-index: -1;
   width: 100%;
