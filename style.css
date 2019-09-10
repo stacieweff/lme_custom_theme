@@ -652,6 +652,16 @@ h1 {
   /* background-color: #fff; */
 }
 
+.content-wrapper-white {
+  margin: 0 75px;
+  font-size: 16px;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background-color: #fff;
+}
+
 .content-wrapper-cat {
   margin: 0 75px;
   font-size: 16px;
