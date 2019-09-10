@@ -61,7 +61,6 @@
                     </article> -->
 
                    <?php endwhile;
-
                  else :
                    echo '<p>No content found</p>';
 
@@ -69,6 +68,7 @@
                  wp_reset_postdata();
             ?>
         </div>
+        <a href="./category/news/">See More >></a>
       </div>
 
 
@@ -113,6 +113,7 @@
                  wp_reset_postdata();
             ?>
         </div>
+        <a href="./products/">See More >></a>
       </div>
 
 
@@ -145,6 +146,7 @@
                     wp_reset_postdata();
               ?>
         </div>
+        <a href="./products/find-an-apparatus">See More >></a>
       </div>
 
       <div class="vendor-wrapper">
@@ -176,6 +178,7 @@
                     wp_reset_postdata();
               ?>
         </div>
+        <a href="./equipment/">See More >></a>
       </div>
 
 
