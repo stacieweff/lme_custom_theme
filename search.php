@@ -8,9 +8,8 @@ if (have_posts()) : ?>
 </div>
 
 <?php
-  while (have_posts()) : the_post();
-
-  get_template_part('category', get_post_format());
+  while (have_posts()) : the_post();?>
+  <?php get_template_part('content', get_post_format());
 
 
   endwhile;
