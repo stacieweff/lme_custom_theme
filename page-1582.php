@@ -9,11 +9,12 @@ if (have_posts()) :
         <!-- <h2><?php the_title(); ?></h2> -->
       </div>
       <div class="text-column">
-      <?php 
-        the_content();
-      ?>
+        <?php 
+          the_content();
+        ?>
       </div>
 
+      
       <?php if ( has_children() OR $post->post_parent > 0 ) { ?>
         <nav class="site-nav children-links clearfix">
         <span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()) ?>"><?php echo get_the_title(get_top_ancestor_id()) ?></a></span>
@@ -28,6 +29,7 @@ if (have_posts()) :
         </ul>
       </nav>
       <?php } ?>
+      <div class="page-content-custom">
       <h2>Featured Products</h2>
       <div class="products-container">
             <?php
@@ -51,6 +53,7 @@ if (have_posts()) :
                  wp_reset_postdata();
               ?>
               </div>
+      </div>
     </div>
     <div class="background-image-stripe"> </div>
   </article>
