@@ -61,6 +61,7 @@ if ($categories) {
     <?php posts_nav_link(' &#8212; ', __('&laquo; Previous Page'), __('Next Page &raquo;')); ?>
   </div>
 </div>
+<!-- <?php get_sidebar() ?> -->
 <div class="background-image-stripe"> </div>
 <?php
 get_footer();

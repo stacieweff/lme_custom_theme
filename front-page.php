@@ -14,17 +14,11 @@
 
     endif; ?>
 
+    <?php if (is_active_sidebar('homepageinfo')) : ?>
     <div class="main-image-widget">
-      <p class="main-info-title">Everything for Firefighting</p>
-      <ul class="main-info-offerings">
-        <li>FIRE APPARATUS</li>
-        <li>BREATHING APPARATUS</li>
-        <li>PERSONAL PROTECTIVE EQUIPMENT</li>
-        <li>TEST INSTRUMENTS</li>
-        <li>HOSE, NOZZLES, FITTINGS & ADAPTER TOOLS</li>
-        <li>EXTRICATION EQUIPMENT SYSTEMS</li>
-      </ul>
+      <?php dynamic_sidebar('homepageinfo') ?>
     </div>
+  <?php endif; ?>
   </div>
     <div class="home-columns clearfix">
       <div class="news-block-wrapper">
