@@ -22,7 +22,7 @@
   </div>
     <div class="home-columns clearfix">
       <div class="news-block-wrapper">
-        <div class="news-block-heading"><h1>Recent News</h1></div>
+        <div class="news-block-heading"><h1><a href="./category/news/">Recent News</a></h1></div>
         <div class="news-block-container">
           <?php
           //news posts start here
@@ -62,12 +62,11 @@
                  wp_reset_postdata();
             ?>
         </div>
-        <a href="./category/news/">See More >></a>
       </div>
 
 
       <div class="news-block-wrapper">
-        <div class="news-block-heading"><h1>Featured Products</h1></div>
+        <div class="news-block-heading"><h1><a href="./products/">Featured Products</a></h1></div>
         <div class="news-block-container">
           <?php
           //products posts start here
@@ -107,12 +106,11 @@
                  wp_reset_postdata();
             ?>
         </div>
-        <a href="./products/">See More >></a>
       </div>
 
 
       <div class="apparatus-dealer-wrapper">
-        <div class="apparatus-dealer-header"><h1>Apparatus Dealers</h1></div>
+        <div class="apparatus-dealer-header"><h1><a href="./products/find-an-apparatus">Apparatus Dealers</a></h1></div>
         <div class="apparatus-dealer-container">
               <?php
               $appdealersPosts = new WP_Query('cat=11&posts_per_page=4');
@@ -140,11 +138,10 @@
                     wp_reset_postdata();
               ?>
         </div>
-        <a href="./products/find-an-apparatus">See More >></a>
       </div>
 
       <div class="vendor-wrapper">
-        <div class="vendor-header"><h1>Featured Vendors</h1></div>
+        <div class="vendor-header"><h1><a href="./equipment/">Featured Vendors</a></h1></div>
         <div class="vendor-container">
               <?php
               $featuredVendorsPosts = new WP_Query('tag=featured-product&posts_per_page=4');
@@ -172,7 +169,6 @@
                     wp_reset_postdata();
               ?>
         </div>
-        <a href="./equipment/">See More >></a>
       </div>
 
 
