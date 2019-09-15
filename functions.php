@@ -62,6 +62,13 @@ function ourWidgetsInit() {
     'id' => 'homepageinfo',
     'before_widget' => '<div>',
 		'after_widget' => '</div>',
+  ));
+  
+  register_sidebar( array(
+		'name' => 'Facebook Widget',
+    'id' => 'facebook',
+    'before_widget' => '<div>',
+		'after_widget' => '</div>',
 	));
 	
 	// register_sidebar( array(

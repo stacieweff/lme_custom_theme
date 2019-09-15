@@ -392,16 +392,16 @@ input#searchsubmit {
 }
 
 .site-footer nav ul li {
-  margin-right: 10px;
+  /* margin-right: 10px;
   padding-right: 10px;
-  border-right: 1px dotted #bbb;
+  border-right: 1px dotted #bbb; */
   list-style: none;
 }
 
 .footer-nav-links {
-  padding-bottom: 25px;
+  /* padding-bottom: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .site-footer nav ul li a:link,
@@ -410,17 +410,29 @@ input#searchsubmit {
   text-decoration: none;
 }
 
+.menu-footer-menu-links-container {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  padding: 0 150px 25px;
+}
+
 ul#menu-footer-menu-links {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   font-size: 16px;
+  margin-block-start: auto;
+  margin-block-end: auto;
 }
 
 .footer-company-info {
-  padding-top: 25px;
   border-top: 1px solid #fff;
   color: #fff;
   font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px;
 }
 
 .footer-left {
@@ -547,7 +559,6 @@ h1 {
   /* overflow-y: auto; */
   overflow: hidden;
   margin: 20px;
-  background-color: #eee;
   box-shadow: 2px 4px 5px #cecece;
   border: 1px solid #cecece;
   position: relative;

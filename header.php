@@ -15,7 +15,7 @@
   <header class="site-header">
     <div class="company-container">
       <div class="logo-area">
-        <img src="http://localhost:8888/new_lme_company/wp-content/uploads/2018/10/lme_logo.jpg" width="125px"/>
+        <img src="<?php site_icon_url() ?>" width="125px"/>
       </div>
       <div class="company-info">
         <div class="company-name">
