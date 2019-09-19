@@ -141,13 +141,16 @@ input#searchsubmit {
 }
 
 #main-nav .current-menu-item a,
-#main-nav .current_page_item a,
-#main-nav a:hover {
+#main-nav .current_page_item a {
   color: #868481;
   /* background: #ccc; */
   border-bottom: 1px solid #a12026;
   text-decoration: none;
   font-weight: 600;
+}
+#main-nav a:hover {
+  /* border-bottom: 1px solid  #a12026; */
+  background-color: #F4F6F9;
 }
 
 #main-nav ul ul {
@@ -158,13 +161,14 @@ input#searchsubmit {
   top: 30px;
   /* this should be the same height as the top level menu -- height + padding + borders */
   z-index: 99;
+  right: 0;
 }
 
 #main-nav ul ul li {
   /* this targets all submenu items */
   float: none;
   /* overwriting our float up above */
-  width: 150px;
+  width: 340px;
   /* set to the width you want your sub menus to be. This needs xto match the value we set below */
 }
 
@@ -181,7 +185,7 @@ input#searchsubmit {
 
 #main-nav ul ul li ul {
   /* target all second, third, and deeper level sub menus */
-  left: 150px;
+  left: 340px;
   /* this needs to match the sub menu width set above -- width + padding + borders */
   top: 0;
   /* this ensures the sub menu starts in line with its parent item */
@@ -326,8 +330,15 @@ input#searchsubmit {
 
 /*children links*/
 .children-links {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  /* margin: 0 50px;
+  font-size: 80%; */
+  padding: 15px 50px;
   font-size: 80%;
+  position: absolute;
+  z-index: 98;
+  background: rgba(255,255,255,0.8);
+  width: 100%;
 }
 
 .children-links a:link,
@@ -382,6 +393,7 @@ input#searchsubmit {
   border-bottom: 1px solid #a12026;
   text-decoration: none;
   font-weight: 600;
+  height: auto;
 }
 
 /*footer links*/
@@ -573,6 +585,7 @@ h1 {
 .apparatus-dealer-header a,
 .vendor-header a {
   color: #808080;
+  text-decoration: none;
 }
 
 .text-container {
@@ -653,12 +666,12 @@ h1 {
 }
 
 .page-content {
-  margin: 50px 100px;
+  margin: 50px 100px 0;
   /* font-size: 16px; */
 }
 
 .page-content-custom {
-  margin: 25px;
+  margin: 0 100px 50px;
 }
 
 .content-wrapper {
@@ -761,17 +774,17 @@ h1 {
 
 .products-card {
   position: relative;
-  width: 375px;
-  height: 300px;
-  border: 1px solid #707070;
+  width: 275px;
+  height: 275px;
   overflow: hidden;
   margin: 20px;
-  box-shadow: 3px 4px #999;
+  box-shadow: 2px 4px 5px #cecece;
+  border: 1px solid #cecece;
 }
 
 .products-card:hover {
-  border: 1px solid #a12026;
-  box-shadow: 3px 3px 4px #a12026;
+  border: 1px solid #e4e4e4;
+  box-shadow: 2px 2px 8px #878787;
 }
 
 /*search*/
@@ -792,4 +805,17 @@ h1 {
 
 .more-link {
   text-align: right;
+}
+
+/*page-wrapper Products*/
+.page-wrapper {
+  /* position: relative; */
+}
+.content-page {
+  /* margin-top: -19px; */
+}
+
+/*pagenavi plugin*/
+.wp-pagenavi {
+  text-align: center;
 }
