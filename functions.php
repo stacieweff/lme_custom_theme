@@ -69,7 +69,14 @@ function ourWidgetsInit() {
     'id' => 'facebook',
     'before_widget' => '<div>',
 		'after_widget' => '</div>',
-	));
+  ));
+
+  register_sidebar( array(
+    'name' => 'Contact Widget',
+    'id' => 'contact',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>'
+  ));
 	
 	// register_sidebar( array(
 	// 	'name' => 'Footer Area 1',

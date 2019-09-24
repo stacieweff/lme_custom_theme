@@ -24,8 +24,12 @@ if (have_posts()) :
       </nav>
       <?php } ?>
       <div class="content-page">
-        <!-- <h2><?php the_title(); ?></h2> -->        
+        <!-- <h2><?php the_title(); ?></h2> -->
         <?php the_content(); ?>
+
+        <div class="testing-this">
+        <?php dynamic_sidebar('contact') ?>
+        </div>
 
         <div class="products-container">
             <?php
