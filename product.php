@@ -24,8 +24,50 @@ if (have_posts()) :
       </nav>
       <?php } ?>
       <div class="content-page">
-        <!-- <h2><?php the_title(); ?></h2> -->
+        <!-- <h2><?php the_title(); ?></h2> -->        
         <?php the_content(); ?>
+
+        <div class="products-container">
+            <?php
+            //products posts start here
+            // $productPosts = new WP_Query('cat=4');
+            $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+            global $post;
+            $post_slug = $post->post_name;
+            $args = array(
+                'post_type' => 'post',
+                'post_status' => 'publish',
+                'category_name' => $post_slug,
+                'posts_per_page' => 15,
+                'paged' => $paged,
+            );
+            $productPosts = new WP_Query( $args );
+            if ($productPosts->have_posts()) :
+              while ($productPosts->have_posts()) : $productPosts->the_post(); ?>
+                  <div class="products-card">
+                     <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
+                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-thumbnail'); ?></a>
+                       </div>
+                     </div>
+                     <div class="text-container">
+                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                      </div>
+                  </div>
+              <?php endwhile;
+                 else :
+                   echo '<p>No Current Related Products</p>';
+                 endif;
+                 wp_reset_postdata();
+              ?>
+              </div>
+              <?php wp_pagenavi(
+                            array(
+                                'query' => $productPosts,
+                            )
+                        );
+                        ?>
+        </div>
+
       </div>
     </div>
     <div class="background-image-stripe"> </div>
