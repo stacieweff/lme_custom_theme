@@ -29,8 +29,8 @@ if (have_posts()) :
               the_content();
             ?>
           </div>
-        </div>
-      <div class="page-content-custom">
+        <!-- </div> -->
+      <!-- <div class="page-content-custom"> -->
         <div class="custom-content-container">
           <div class="left-content">
             <h2>Recent Product News</h2>
