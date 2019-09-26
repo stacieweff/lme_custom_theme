@@ -839,3 +839,31 @@ h1 {
 .alignfull img {
   width: 100vw;
 }
+
+/* Contact Us Page */
+.contact-us-section {
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon {
+  border: 1px solid #eee;
+  border-radius: 50%;
+  padding: 30px;
+  margin: 10px;
+  background-color: #fff;
+  font-size: 30px;
+}
+
+.contact-data {
+  margin: 0 35px 0 5px;
+}
