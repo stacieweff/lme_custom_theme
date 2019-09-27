@@ -168,7 +168,7 @@ input#searchsubmit {
   /* this targets all submenu items */
   float: none;
   /* overwriting our float up above */
-  width: 340px;
+  /* width: 340px; */
   /* set to the width you want your sub menus to be. This needs xto match the value we set below */
 }
 
@@ -193,7 +193,14 @@ input#searchsubmit {
 
 .sub-menu {
   background-color: #fff;
+  border: 1px solid #eee;
+  width: 350px;
 }
+
+/* ul.sub-menu {
+  border: 1px solid #eee;
+  width: 350px;
+} */
 
 /* .site-nav ul {
   margin: 0;
@@ -388,8 +395,8 @@ input#searchsubmit {
 /* .site-header nav ul li.current-menu-item a:visited, */
 .site-header nav ul li.current-page-ancestor a:link {
   /* .site-header nav ul li.current-page-ancestor a:visited { */
-  color: #868481;
   /* background: #ccc; */
+  color: #868481;
   border-bottom: 1px solid #a12026;
   text-decoration: none;
   font-weight: 600;
@@ -484,6 +491,21 @@ img {
 
 .main-info-title {
   font-size: 26px;
+}
+
+a.home-button {
+  background-color: #eee;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+a.home-button:hover {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 3px 4px 3px #333;
+  border: 1px solid;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -693,7 +715,7 @@ h1 {
   font-style: normal;
   font-size: 16px;
   background-color: #fff;
-  margin: 0 100px;
+  margin: 10px 100px;
   /* padding: 20px; */
 }
 
@@ -752,7 +774,7 @@ h1 {
 .category-post {
   display: flex;
   align-items: center;
-  box-shadow: 2px 4px 5px #cecece;
+  /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #cecece;
   margin: 20px;
   height: 200px;
@@ -765,7 +787,17 @@ h1 {
 }
 
 .post-content {
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  padding: 25px;
+}
+
+.post-content h2 a {
+  color: #999;
+  text-decoration: none;
+}
+
+.post-content h2 a:hover {
+  text-decoration: underline;
 }
 
 /* Products Page */
