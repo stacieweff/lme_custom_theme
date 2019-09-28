@@ -341,7 +341,7 @@ input#searchsubmit {
   /* margin: 0 50px;
   font-size: 80%; */
   padding: 15px 50px;
-  font-size: 80%;
+  /* font-size: 80%; */
   position: absolute;
   z-index: 98;
   background: rgba(255,255,255,0.8);
@@ -351,7 +351,16 @@ input#searchsubmit {
 .children-links a:link,
 .children-links a:visited {
   text-decoration: none;
+  color: #666;
 }
+
+.children-links a:link:hover,
+.children-links a:visited:hover {
+  /* text-decoration: underline; */
+  border-bottom: 1px solid #a12026;
+  color: #333;
+}
+
 
 .children-links ul {
   float: left;
@@ -377,7 +386,8 @@ input#searchsubmit {
 
 .children-links .current_page_item a:link,
 .children-links .current_page_item a:visited {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #a12026;
+  /* text-decoration: underline; */
   color: #333;
   cursor: default;
 }
