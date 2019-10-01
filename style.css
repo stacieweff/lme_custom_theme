@@ -518,12 +518,6 @@ a.home-button:hover {
   border: 1px solid;
 }
 
-@media only screen and (max-width: 1024px) {
-  .main-image-widget {
-    width: 100%;
-  }
-}
-
 /*main column*/
 .main-column {
   width: 66%;
@@ -651,6 +645,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .apparatus-dealer-block {
@@ -678,6 +673,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .vendor-block {
@@ -908,4 +904,48 @@ h1 {
 
 .contact-data {
   margin: 0 35px 0 5px;
+}
+
+/*mobile*/
+
+
+@media only screen and (max-width: 1246px) {
+  .main-image-widget {
+    top: 160px;
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-image-widget {
+    padding: 10px;
+    right: 0;
+    top: 141px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-image-widget {
+    padding: 15px;
+    position: inherit;
+    font-size: 13px;
+  }
+  .main-info-title {
+    font-size: 18px;
+  }
+  .site-header {
+    display: block;
+  }
+  .main-search {
+    position: inherit;
+  }
+  #main-nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .news-block {
+    height: 200px;
+  }
 }
