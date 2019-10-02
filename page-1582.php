@@ -74,14 +74,14 @@ if (have_posts()) :
 
 <?php
     // query for the about page
-    $your_query = new WP_Query( 'pagename=equipment' );
+    //$your_query = new WP_Query( 'pagename=equipment' );
     // "loop" through query (even though it's just one page) 
-    while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
-    <h2>Vendors</h2>    
-    <?php the_content();
-    endwhile;
+    //while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
+    <!-- <h2>Vendors</h2>     -->
+    <!-- <?php //the_content();
+    //endwhile;
     // reset post data (important!)
-    wp_reset_postdata();
+    //wp_reset_postdata();
 ?>
             </div>
             <!-- <div class="right-content">
@@ -92,7 +92,7 @@ if (have_posts()) :
           </div>
         </div>
     </div>
-    <div class="background-image-stripe"> </div>
+    <!-- <div class="background-image-stripe"> </div> -->
   </article>
 
 

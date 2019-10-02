@@ -883,10 +883,11 @@ h1 {
 /* Contact Us Page */
 .contact-us-section {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
   z-index: 3;
   flex-wrap: wrap;
-  margin: 25px;
+  /* margin: 25px; */
 }
 
 .contact-info {

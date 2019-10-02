@@ -129,7 +129,7 @@ if (have_posts()) :
 ?>
 
 </div>
-    <div class="background-image-stripe"> </div>
+    <!-- <div class="background-image-stripe"> </div> -->
   </article>
 
   <?php endwhile;
