@@ -135,13 +135,14 @@ input#searchsubmit {
   display: block;
   height: 30px;
   line-height: 30px;
-  padding: 0 15px;
+  padding: 0 25px;
   color: #868481;
   text-decoration: none;
+  border-bottom: none;
 }
 
-#main-nav .current-menu-item a,
-#main-nav .current_page_item a {
+#main-nav .current-menu-item,
+#main-nav .current_page_item {
   color: #868481;
   /* background: #ccc; */
   border-bottom: 1px solid #a12026;
@@ -161,10 +162,13 @@ input#searchsubmit {
   top: 30px;
   /* this should be the same height as the top level menu -- height + padding + borders */
   z-index: 99;
-  right: 0;
+  left: 0;
 }
 
 #main-nav ul ul li {
+  min-width: 125px;
+  border-bottom: 1px solid #ccc;
+  font-size: 13px;
   /* this targets all submenu items */
   float: none;
   /* overwriting our float up above */
@@ -174,7 +178,9 @@ input#searchsubmit {
 
 #main-nav ul ul li a {
   /* target all sub menu item links */
-  padding: 5px 10px;
+  padding: 10px 5px;
+  line-height: 15px;
+  height: auto;
   /* give our sub menu links a nice button feel */
 }
 
@@ -194,7 +200,7 @@ input#searchsubmit {
 .sub-menu {
   background-color: #fff;
   border: 1px solid #eee;
-  width: 350px;
+  /* width: 350px; */
 }
 
 /* ul.sub-menu {
@@ -345,7 +351,7 @@ input#searchsubmit {
   position: absolute;
   z-index: 98;
   background: rgba(255,255,255,0.8);
-  width: 100%;
+  /* width: 100%; */
 }
 
 .children-links a:link,
@@ -472,6 +478,10 @@ ul#menu-footer-menu-links {
   /* justify-content: center; */
 }
 
+.footer-right {
+  margin-right: 85px;
+}
+
 .footer-logo {
   margin-right: 10px;
 }
@@ -538,13 +548,19 @@ a.home-button:hover {
 }
 
 p.post-info {
-  font-size: 87%;
+  font-size: 80%;
   color: #999;
+  margin-top: -20px;
 }
 
 p.post-info a:link,
 p.post-info a:visited {
   color: #999;
+}
+
+p.post-excerpt {
+  font-size: 13px;
+  line-height: 1.4rem;
 }
 
 /*thumbnails*/
@@ -562,8 +578,8 @@ img {
   /* position: absolute;
   top: 0;
   left: 0; */
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 230px;
+  max-width: 200px;
 }
 
 .background-thumbnail {
@@ -723,8 +739,8 @@ h1 {
   font-style: normal;
   font-size: 16px;
   background-color: #fff;
-  margin: 10px 100px;
-  /* padding: 20px; */
+  margin: 0 100px;
+  padding: 0 25px;
 }
 
 .content-wrapper-cat {
@@ -776,7 +792,8 @@ h1 {
 
 /* category page styles */
 .category-content {
-  margin: 50px;
+  /* margin: 50px; */
+  display: flex;
 }
 
 .category-post {
@@ -785,7 +802,7 @@ h1 {
   /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #cecece;
   margin: 20px;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -797,14 +814,16 @@ h1 {
 .post-content {
   /* margin-left: 20px; */
   padding: 25px;
+  overflow: auto;
+  height: 100%;
 }
 
-.post-content h2 a {
+.post-content h3 a {
   color: #999;
   text-decoration: none;
 }
 
-.post-content h2 a:hover {
+.post-content h3 a:hover {
   text-decoration: underline;
 }
 
@@ -868,6 +887,8 @@ h1 {
 
 /*full width images*/
 .alignwide {
+  /* margin-left  : -125px;
+  margin-right : -125px; */
   margin-left  : -100px;
   margin-right : -100px;
 }
@@ -909,6 +930,25 @@ h1 {
   margin: 0 35px 0 5px;
 }
 
+/*sidebar*/
+.sidebar-categories {
+  width: 43%;
+}
+h2.widget-title {
+  font-size: 20px;
+  color: #a12026;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  font-weight: 500;
+}
+.sidebar-categories .widget-item ul {
+  padding-inline-start: 30px;
+}
+.sidebar-categories .widget-item ul li a {
+  color: #757575;
+}
+
+
 /*mobile*/
 
 
@@ -924,6 +964,12 @@ h1 {
     padding: 10px;
     right: 0;
     top: 141px;
+  }
+  .content-wrapper-cat {
+    margin: 12px 25px;
+  }
+  .category-content {
+    display: inline;
   }
 }
 
@@ -968,6 +1014,9 @@ h1 {
 }
 
 @media only screen and (max-width: 415px) {
+  .news-block-wrapper {
+    margin: 10px;
+  }
   .news-block {
     height: 200px;
   }
@@ -982,5 +1031,49 @@ h1 {
   }
   .footer-company-info {
     flex-direction: column;
+  }
+  .content-wrapper-cat {
+    padding: 0;
+  }
+  .category-post {
+    border: 1px solid #cecece;
+    margin: 20px 0;
+    overflow: hidden;
+    display: block;
+    height: auto;
+  }
+  .post-thumbnail {
+    min-width: 230px;
+    max-width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .sidebar-categories {
+    width: 100%;
+  }
+  .content-page {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .content-page p {
+    font-size: 16px;
+  }
+  .content-wrapper-white {
+    padding: 0 25px;
+    margin: 0;
+  }
+  .alignwide {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .children-links {
+    display: none;
+  }
+  /* #main-nav ul ul {
+    right: 0;
+    left: 0;
+  } */
+  #main-nav ul ul li {
+    min-width: auto;
   }
 }
