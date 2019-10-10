@@ -16,7 +16,6 @@ get_header(); ?>
 
     endif; ?>
   </div>
-  <!-- <?php get_sidebar(); ?> -->
 </div>
 
 

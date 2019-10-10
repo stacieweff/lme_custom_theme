@@ -45,6 +45,123 @@ function tthq_add_custom_fa_css() {
 wp_enqueue_style( 'custom-fa', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' );
 }
 
+// Add Widget Areas
+function ourWidgetsInit() {
+	
+	register_sidebar( array(
+		'name' => 'Sidebar',
+		'id' => 'sidebar1',
+		'before_widget' => '<div class="widget-item">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+  ));
+  
+  register_sidebar( array(
+		'name' => 'Home Page Widget',
+    'id' => 'homepageinfo',
+    'before_widget' => '<div>',
+		'after_widget' => '</div>',
+  ));
+  
+  register_sidebar( array(
+		'name' => 'Facebook Widget',
+    'id' => 'facebook',
+    'before_widget' => '<div>',
+		'after_widget' => '</div>',
+  ));
+
+  register_sidebar( array(
+    'name' => 'Contact Widget',
+    'id' => 'contact',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>'
+  ));
+	
+	// register_sidebar( array(
+	// 	'name' => 'Footer Area 1',
+	// 	'id' => 'footer1',
+	// 	'before_widget' => '<div class="widget-item">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h2 class="widget-title">',
+	// 	'after_title' => '</h2>',
+	// ));
+	
+	// register_sidebar( array(
+	// 	'name' => 'Footer Area 2',
+	// 	'id' => 'footer2',
+	// 	'before_widget' => '<div class="widget-item">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h2 class="widget-title">',
+	// 	'after_title' => '</h2>',
+	// ));
+	
+	// register_sidebar( array(
+	// 	'name' => 'Footer Area 3',
+	// 	'id' => 'footer3',
+	// 	'before_widget' => '<div class="widget-item">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h2 class="widget-title">',
+	// 	'after_title' => '</h2>',
+	// ));
+	
+	// register_sidebar( array(
+	// 	'name' => 'Footer Area 4',
+	// 	'id' => 'footer4',
+	// 	'before_widget' => '<div class="widget-item">',
+	// 	'after_widget' => '</div>',
+	// 	'before_title' => '<h2 class="widget-title">',
+	// 	'after_title' => '</h2>',
+	// ));
+	
+}
+
+add_action('widgets_init', 'ourWidgetsInit');
+
+
+/////////////////////////////////////
+// Register Widgets
+/////////////////////////////////////
+
+// if ( function_exists('register_sidebar') ) {
+// 	register_sidebar(array(
+// 		'name' => 'Homepage Widget Area',
+// 		'before_widget' => '<div class="home-widget">',
+// 		'after_widget' => '</div>',
+// 		'before_title' => '<h3 class="widget"><span class="widget">',
+// 		'after_title' => '</span></h3>',
+// 	));
+// }
+
+// if ( function_exists('register_sidebar') ) {
+// 	register_sidebar(array(
+// 		'name' => 'Sidebar Widget Area',
+// 		'before_widget' => '<div class="sidebar-widget">',
+// 		'after_widget' => '</div>',
+// 		'before_title' => '<h3 class="widget"><span class="widget">',
+// 		'after_title' => '</span></h3>',
+// 	));
+// }
+
+// if ( function_exists('register_sidebar') ) {
+// 	register_sidebar(array(
+// 		'name' => 'Footer Widget Area',
+// 		'before_widget' => '<div class="footer-widget">',
+// 		'after_widget' => '</div>',
+// 		'before_title' => '<h3>',
+// 		'after_title' => '</h3>',
+// 	));
+// }
+
+// include("widgets/widget-facebook.php");
+// include("widgets/widget-tabs.php");
+// include("widgets/widget-list.php");
+// include("widgets/widget-car.php");
+// include("widgets/widget-cat2.php");
+// include("widgets/widget-recent.php");
+// include("widgets/widget-ad.php");
+// include("widgets/widget-social.php");
+
 /////////////////////////////////////
 // Add Bread Crumbs
 /////////////////////////////////////
@@ -154,4 +271,12 @@ function dimox_breadcrumbs() {
 
   }
 } // end dimox_breadcrumbs()
+
+/**
+ * Register support for Gutenberg wide images in your theme
+ */
+function mytheme_setup() {
+  add_theme_support( 'align-wide' );
+}
+add_action( 'after_setup_theme', 'mytheme_setup' );
 ?>

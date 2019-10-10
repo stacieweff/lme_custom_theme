@@ -14,21 +14,15 @@
 
     endif; ?>
 
+    <?php if (is_active_sidebar('homepageinfo')) : ?>
     <div class="main-image-widget">
-      <p class="main-info-title">Everything for Firefighting</p>
-      <ul class="main-info-offerings">
-        <li>FIRE APPARATUS</li>
-        <li>BREATHING APPARATUS</li>
-        <li>PERSONAL PROTECTIVE EQUIPMENT</li>
-        <li>TEST INSTRUMENTS</li>
-        <li>HOSE, NOZZLES, FITTINGS & ADAPTER TOOLS</li>
-        <li>EXTRICATION EQUIPMENT SYSTEMS</li>
-      </ul>
+      <?php dynamic_sidebar('homepageinfo') ?>
     </div>
+  <?php endif; ?>
   </div>
     <div class="home-columns clearfix">
       <div class="news-block-wrapper">
-        <div class="news-block-heading"><h1>Recent News</h1></div>
+        <div class="news-block-heading"><h1><a href="./category/news/">Recent News</a></h1></div>
         <div class="news-block-container">
           <?php
           //news posts start here
@@ -61,7 +55,6 @@
                     </article> -->
 
                    <?php endwhile;
-
                  else :
                    echo '<p>No content found</p>';
 
@@ -73,7 +66,7 @@
 
 
       <div class="news-block-wrapper">
-        <div class="news-block-heading"><h1>Featured Products</h1></div>
+        <div class="news-block-heading"><h1><a href="./products/">Featured Products</a></h1></div>
         <div class="news-block-container">
           <?php
           //products posts start here
@@ -117,7 +110,7 @@
 
 
       <div class="apparatus-dealer-wrapper">
-        <div class="apparatus-dealer-header"><h1>Apparatus Dealers</h1></div>
+        <div class="apparatus-dealer-header"><h1><a href="./products/find-an-apparatus">Apparatus Dealers</a></h1></div>
         <div class="apparatus-dealer-container">
               <?php
               $appdealersPosts = new WP_Query('cat=11&posts_per_page=4');
@@ -148,7 +141,7 @@
       </div>
 
       <div class="vendor-wrapper">
-        <div class="vendor-header"><h1>Featured Vendors</h1></div>
+        <div class="vendor-header"><h1><a href="./equipment/">Featured Vendors</a></h1></div>
         <div class="vendor-container">
               <?php
               $featuredVendorsPosts = new WP_Query('tag=featured-product&posts_per_page=4');
