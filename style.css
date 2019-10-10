@@ -854,16 +854,16 @@ h1 {
 .content-post {
   display: flex;
   align-items: center;
-  box-shadow: 3px 4px #999;
-  border: 1px solid #707070;
+  /* box-shadow: 3px 4px #999; */
+  border: 1px solid #cecece;
   margin: 5px;
-  height: 230px;
-  overflow: auto;
+  height: 150px;
+  overflow: hidden;
 }
 
 .content-post:hover {
-  border: 1px solid #a12026;
-  box-shadow: 3px 3px 4px #a12026;
+  border: 1px solid #e4e4e4;
+  box-shadow: 2px 2px 8px #878787;
 }
 
 .more-link {

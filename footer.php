@@ -2,11 +2,11 @@
   <div class="footer-nav-links">
     <nav id="footer-nav" class="footer-nav">
       <?php
-          $args = array(
-            'theme_location' => 'footer'
-          );
-          ?>
-          <?php wp_nav_menu( $args ); ?>
+        $args = array(
+          'theme_location' => 'footer'
+        );
+      ?>
+      <?php wp_nav_menu( $args ); ?>
     </nav>
   </div>
 

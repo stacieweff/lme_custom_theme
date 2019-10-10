@@ -21,7 +21,7 @@
         <div class="company-name">
           <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
-        <!-- <div class="phone-number"><?php bloginfo('description'); ?></div> -->
+        <div class="phone-number"><?php bloginfo('description'); ?></div>
         <div class="phone-number">(636) 332-6985</div>
         <!-- <div class="social-icons">
           <div class="facebook">F</div>
@@ -34,11 +34,10 @@
       <div class="main-search"><?php get_search_form(); ?></div>
       <nav id="main-nav" class="site-nav">
         <?php
-        $args = array(
-          'theme_location' => 'primary'
-        );
+          $args = array(
+            'theme_location' => 'primary'
+          );
         ?>
-
         <?php wp_nav_menu( $args ); ?>
       </nav>
     </div>

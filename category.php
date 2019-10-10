@@ -5,7 +5,6 @@
     <div class="category-posts-section">
       <?php if (have_posts()) : while (have_posts()) : the_post();?>
       <article class="category-post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
-        <!--post thumbnail-->
         <div class="post-thumbnail">
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-thumbnail'); ?></a>
         </div>
