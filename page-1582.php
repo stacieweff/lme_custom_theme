@@ -5,8 +5,8 @@ if (have_posts()) :
 
   <article class="post page">
     <div class="page-wrapper">
-      <?php if ( has_children() OR $post->post_parent > 0 ) { ?>
-          <nav class="site-nav children-links clearfix">
+      <!-- <?php if ( has_children() OR $post->post_parent > 0 ) { ?>
+        <nav class="site-nav children-links clearfix">
           <span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()) ?>"><?php echo get_the_title(get_top_ancestor_id()) ?></a></span>
           <ul>
             <?php
@@ -18,7 +18,7 @@ if (have_posts()) :
               <?php wp_list_pages($args) ?>
           </ul>
         </nav>
-        <?php } ?>
+      <?php } ?> -->
 
         <div class="content-page">
           <div class="title-column">

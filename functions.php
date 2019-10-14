@@ -77,6 +77,13 @@ function ourWidgetsInit() {
     'before_widget' => '<div>',
     'after_widget' => '</div>'
   ));
+
+  register_sidebar( array(
+    'name' => 'Product Navigation Widget',
+    'id' => 'productnav',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>'
+  ));
 	
 	// register_sidebar( array(
 	// 	'name' => 'Footer Area 1',
