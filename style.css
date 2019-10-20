@@ -625,8 +625,8 @@ h1 {
 }
 
 .news-block {
-  width: 375px;
-  height: 300px;
+  width: 300px;
+  height: 225px;
   /* padding: 17px; */
   /* overflow-y: auto; */
   overflow: hidden;
@@ -683,8 +683,8 @@ h1 {
 }
 
 .apparatus-dealer-block {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 175px;
   background-color: #fff;
   display: flex;
   align-items: center;
