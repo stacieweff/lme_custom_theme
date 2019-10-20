@@ -72,6 +72,13 @@ function ourWidgetsInit() {
   ));
 
   register_sidebar( array(
+		'name' => 'Social Header Widget',
+    'id' => 'socialheader',
+    'before_widget' => '<div>',
+		'after_widget' => '</div>',
+  ));
+
+  register_sidebar( array(
     'name' => 'Contact Widget',
     'id' => 'contact',
     'before_widget' => '<div>',

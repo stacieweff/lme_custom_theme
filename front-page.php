@@ -35,7 +35,6 @@
                   </div>
                   <div class="text-container">
                     <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                           <!-- <div class="news-excerpt"><?php the_excerpt(); ?></div> -->
                     </div>
                 </div>
 

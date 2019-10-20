@@ -22,16 +22,19 @@
           <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
         <div class="phone-number"><?php bloginfo('description'); ?></div>
-        <div class="phone-number">(636) 332-6985</div>
-        <!-- <div class="social-icons">
-          <div class="facebook">F</div>
-          <div class="twitter">T</div>
-          <div class="instagram">I</div>
-        </div> -->
+        <!-- <div class="phone-number">(636) 332-6985</div> -->
+        <div class="social-icons">
+          <div class="facebook"><?php dynamic_sidebar('socialheader') ?></div>
+          <!-- <div class="twitter">T</div>
+          <div class="instagram">I</div> -->
+        </div>
       </div>
     </div>
     <div class="right-header">
-      <div class="main-search"><?php get_search_form(); ?></div>
+      <div class="search-n-stuff">
+        <div class="main-search"><?php get_search_form(); ?></div>
+        <div class="emergency-info">LME Company: 636-332-6985<br>24/7 Emergency Service: 636-233-1738</div>
+      </div>
       <nav id="main-nav" class="site-nav">
         <?php
           $args = array(
