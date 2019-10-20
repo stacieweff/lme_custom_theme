@@ -9,6 +9,10 @@
       <?php wp_nav_menu( $args ); ?>
     </nav>
   </div>
+  <div>
+    <?php dynamic_sidebar('contactfooter') ?>
+    <!-- <div class="office-hours">Our Office Hours</div> -->
+  </div>
 
   <div class="footer-company-info">
     <div class="footer-left">

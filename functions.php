@@ -86,6 +86,13 @@ function ourWidgetsInit() {
   ));
 
   register_sidebar( array(
+    'name' => 'Contact Footer Widget',
+    'id' => 'contactfooter',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>'
+  ));
+
+  register_sidebar( array(
     'name' => 'Product Navigation Widget',
     'id' => 'productnav',
     'before_widget' => '<div>',
