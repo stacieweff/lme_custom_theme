@@ -73,6 +73,37 @@ if (have_posts()) :
         
 
         <?php if (is_page(93)) { ?>
+        <div class="apparatus-dealer-wrapper">
+        <div class="apparatus-dealer-header"><h1><a href="./products/find-an-apparatus">Apparatus Dealers</a></h1></div>
+        <div class="apparatus-dealer-container">
+              <?php
+              $appdealersPosts = new WP_Query('cat=11&posts_per_page=4');
+                    if ($appdealersPosts->have_posts()) :
+                      while ($appdealersPosts->have_posts()) : $appdealersPosts->the_post(); ?>
+
+
+
+                  <div class="apparatus-dealer-block">
+                     <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
+                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                       </div>
+                     </div>
+                   </div>
+
+                    <?php endwhile;
+
+                    else :
+                      echo '<p>No content found</p>';
+
+                    endif;
+                    wp_reset_postdata();
+              ?>
+        </div>
+      </div>
+
+
+
+
             <?php
             //deliveries posts start here
             $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;

@@ -51,12 +51,13 @@ article.post:last-of-type {
 }
 
 .company-name {
-  font-size: 22px;
+  font-size: 35px;
 }
 
 .company-name a:link,
 .company-name a:visited {
-  color: #808080;
+  /* color: #808080; */
+  color: #c59e55;
   text-decoration: none;
 }
 
@@ -127,7 +128,7 @@ input#searchsubmit {
   /* only needed if you don't have a reset */
   position: relative;
   /* this is needed in order to position sub menus */
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -135,23 +136,29 @@ input#searchsubmit {
   display: block;
   height: 30px;
   line-height: 30px;
-  padding: 0 25px;
+  padding: 0 40px;
   color: #868481;
   text-decoration: none;
   border-bottom: none;
+  margin-bottom: 5px;
 }
 
 #main-nav .current-menu-item,
 #main-nav .current_page_item {
   color: #868481;
   /* background: #ccc; */
-  border-bottom: 1px solid #a12026;
+  border-bottom: 2px solid #a12026;
   text-decoration: none;
   font-weight: 600;
+}
+#main-nav .current-menu-item, 
+#main-nav .current_page_item a {
+  color: #333;
 }
 #main-nav a:hover {
   /* border-bottom: 1px solid  #a12026; */
   background-color: #F4F6F9;
+  font-weight: bold;
 }
 
 #main-nav ul ul {
@@ -163,13 +170,13 @@ input#searchsubmit {
   /* this should be the same height as the top level menu -- height + padding + borders */
   z-index: 99;
   right: 0;
-  width: 150px
+  width: 200px
 }
 
 #main-nav ul ul li {
   min-width: 125px;
   border-bottom: 1px solid #ccc;
-  font-size: 13px;
+  font-size: 14px;
   /* this targets all submenu items */
   float: none;
   /* overwriting our float up above */
@@ -183,6 +190,14 @@ input#searchsubmit {
   line-height: 15px;
   height: auto;
   /* give our sub menu links a nice button feel */
+}
+
+#main-nav ul ul li a:hover {
+  background-color: #fff;
+}
+
+#main-nav ul ul li a:active {
+  color: blue;
 }
 
 #main-nav ul li:hover>ul {
@@ -199,7 +214,7 @@ input#searchsubmit {
 }
 
 .sub-menu {
-  background-color: #fff;
+  background-color: #F4F6F9;
   border: 1px solid #eee;
   /* width: 350px; */
 }
@@ -979,6 +994,9 @@ h2.widget-title {
   }
   .category-content {
     display: inline;
+  }
+  #main-nav li a {
+    padding: 0 20px;
   }
 }
 
