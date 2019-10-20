@@ -83,7 +83,7 @@
         <div class="vendor-header"><h1><a href="./equipment/">Featured Vendors</a></h1></div>
         <div class="vendor-container">
               <?php
-              $featuredVendorsPosts = new WP_Query('tag=featured-product&posts_per_page=4');
+              $featuredVendorsPosts = new WP_Query('tag=featured-product&posts_per_page=8');
                     if ($featuredVendorsPosts->have_posts()) :
                       while ($featuredVendorsPosts->have_posts()) : $featuredVendorsPosts->the_post(); ?>
 
@@ -91,7 +91,7 @@
 
                   <div class="vendor-block">
                      <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
-                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                       <div class="background-thumbnail"><a href="<?php echo get_the_excerpt() ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
                        </div>
                      </div>
                    </div>

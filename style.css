@@ -631,8 +631,8 @@ h1 {
   /* overflow-y: auto; */
   overflow: hidden;
   margin: 20px;
-  box-shadow: 2px 4px 5px #cecece;
-  border: 1px solid #cecece;
+  /* box-shadow: 2px 4px 5px #cecece; */
+  border: 1px solid #eee;
   position: relative;
 }
 
@@ -690,8 +690,8 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 25px;
-  box-shadow: 2px 4px 5px #cecece;
-  border: 1px solid #cecece;
+  /* box-shadow: 2px 4px 5px #cecece; */
+  border: 1px solid #fff;
 }
 
 .apparatus-dealer-block:hover {
@@ -718,8 +718,8 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 25px;
-  box-shadow: 2px 4px 5px #cecece;
-  border: 1px solid #cecece;
+  /* box-shadow: 2px 4px 5px #cecece; */
+  border: 1px solid #eee;
 }
 
 .vendor-block:hover {
