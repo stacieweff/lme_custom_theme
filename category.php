@@ -48,9 +48,9 @@
       endif; ?>
       <?php posts_nav_link(' &#8212; ', __('&laquo; Previous Page'), __('Next Page &raquo;')); ?>
     </div>
-    <div class="sidebar-categories">
+    <!-- <div class="sidebar-categories">
       <?php get_sidebar() ?>
-    </div>
+    </div> -->
   </div>
 </div>
 <div class="background-image-stripe"> </div>

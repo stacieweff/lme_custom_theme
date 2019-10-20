@@ -33,7 +33,7 @@ if (have_posts()) :
       <!-- <div class="page-content-custom"> -->
         <div class="custom-content-container">
           <div class="left-content">
-            <h2>Recent Product News</h2>
+            <h2>Featured Equipment</h2>
             <div class="products-container">
                   <?php
                   //products posts start here

@@ -70,14 +70,14 @@ if (have_posts()) :
                             )
                         );
                         ?>
-        
+    </div>
 
-        <?php if (is_page(93)) { ?>
+    <?php if (is_page(93)) { ?>
         <div class="apparatus-dealer-wrapper">
         <div class="apparatus-dealer-header"><h1><a href="./products/find-an-apparatus">Apparatus Dealers</a></h1></div>
         <div class="apparatus-dealer-container">
               <?php
-              $appdealersPosts = new WP_Query('cat=11&posts_per_page=4');
+              $appdealersPosts = new WP_Query('cat=11&posts_per_page=8');
                     if ($appdealersPosts->have_posts()) :
                       while ($appdealersPosts->have_posts()) : $appdealersPosts->the_post(); ?>
 
@@ -85,7 +85,7 @@ if (have_posts()) :
 
                   <div class="apparatus-dealer-block">
                      <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
-                       <div class="background-thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                       <div class="background-thumbnail"><a href="<?php echo get_the_excerpt() ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
                        </div>
                      </div>
                    </div>
@@ -116,7 +116,7 @@ if (have_posts()) :
             );
             $productPosts = new WP_Query( $args );
             if($productPosts->have_posts()) { ?>
-              <h2>Recent Deliveries</h2>
+              <div class="recent-deliveries"><h2>Our Fire Apparatus Deliveries</h2></div>
               <div class="products-container">
             <?php }
             if ($productPosts->have_posts()) :
@@ -145,22 +145,10 @@ if (have_posts()) :
                         );
                         ?>
         <?php }?>
-      
+        <p class="thank-you">Thank you for your business!</p>
 
-      <!-- <?php
-    // query for the about page
-    // $your_query = new WP_Query( 'pagename=equipment' );
-    // "loop" through query (even though it's just one page) 
-    // while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
-    <h2>Vendors</h2>    
-    <?php //the_content();
-    // endwhile;
-    // reset post data (important!)
-    // wp_reset_postdata();
-?> -->
 
-</div>
-    <!-- <div class="background-image-stripe"> </div> -->
+
   </article>
 
   <?php endwhile;
