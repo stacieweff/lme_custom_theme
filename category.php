@@ -6,7 +6,7 @@
       <?php if (have_posts()) : while (have_posts()) : the_post();?>
       <article class="category-post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
         <div class="post-thumbnail">
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-thumbnail'); ?></a>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large-thumbnail'); ?></a>
         </div>
         <div class="post-content">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

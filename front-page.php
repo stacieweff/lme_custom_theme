@@ -24,7 +24,7 @@
       <div class="news-block-container">
         <?php
           //news posts start here //&orderby=title&order=ASC
-          $newsPosts = new WP_Query('cat=3&posts_per_page=6');
+          $newsPosts = new WP_Query('cat=3&posts_per_page=8');
             if ($newsPosts->have_posts()) :
               while ($newsPosts->have_posts()) : $newsPosts->the_post(); ?>
                 <div class="news-block">

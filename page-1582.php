@@ -73,11 +73,46 @@ if (have_posts()) :
                               ?>
 
             </div>
-            <!-- <div class="right-content">
-              <div class="testing-this"> -->
-                <?php //dynamic_sidebar('contact') ?>
-              <!-- </div>
-            </div> -->
+
+
+            <h2>Vendors</h2>
+            <p>In addition to the items listed, we also sell a variety of products from the following suppliers:</p>
+            <div class="vendor-container">
+                  <?php
+                  //vendor posts start here
+                  // $vendorPosts = new WP_Query('cat=4');
+                  // $pagedVendors = (get_query_var( 'pagedVendors' )) ? get_query_var( 'pagedVendors' ) : 1;
+                  // $args = array(
+                  //     'post_type' => 'post',
+                  //     'post_status' => 'publish',
+                  //     'category_name' => 'vendors',
+                  //     'posts_per_page' => 40,
+                  //     'pagedVendors' => $pagedVendors,
+                  // );
+                  $vendorPosts = new WP_Query( 'cat=19&posts_per_page=-1' );
+                  if ($vendorPosts->have_posts()) :
+                    while ($vendorPosts->have_posts()) : $vendorPosts->the_post(); ?>
+                        <div class="vendor-block">
+                          <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
+                            <div class="background-thumbnail"><a href="<?php echo get_the_excerpt() ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                            </div>
+                          </div>
+                        </div>
+                    <?php endwhile;
+                      else :
+                        echo '<p>No content found</p>';
+                      endif;
+                      wp_reset_postdata();
+                    ?>
+                    </div>
+                    <!-- <?php //wp_pagenavi(
+                              //     array(
+                              //         'query' => $vendorPosts,
+                              //     )
+                              // );
+                              ?> -->
+
+            </div>
           </div>
         </div>
     </div>

@@ -656,8 +656,8 @@ img {
   /* position: absolute;
   top: 0;
   left: 0; */
-  min-width: 230px;
-  max-width: 200px;
+  min-width: 260px;
+  max-width: 260px;
 }
 
 .background-thumbnail {
@@ -891,7 +891,7 @@ h1 {
   /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #cecece;
   margin: 20px;
-  height: 150px;
+  height: 165px;
   overflow: hidden;
 }
 
@@ -976,7 +976,7 @@ h1 {
   /* box-shadow: 3px 4px #999; */
   border: 1px solid #cecece;
   margin: 5px;
-  height: 150px;
+  height: 160px;
   overflow: hidden;
 }
 
