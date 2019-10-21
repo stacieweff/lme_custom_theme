@@ -43,7 +43,7 @@ if (have_posts()) :
                       'post_type' => 'post',
                       'post_status' => 'publish',
                       'category_name' => 'products',
-                      'posts_per_page' => 15,
+                      'posts_per_page' => 10,
                       'paged' => $paged,
                   );
                   $productPosts = new WP_Query( $args );
@@ -55,7 +55,7 @@ if (have_posts()) :
                             </div>
                           </div>
                           <div class="text-container">
-                                <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                                <div class="product-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                             </div>
                         </div>
                     <?php endwhile;

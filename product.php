@@ -54,7 +54,7 @@ if (have_posts()) :
                         </div>
                       </div>
                       <div class="text-container">
-                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                           <div class="product-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                       </div>
                   </div>
               <?php endwhile; ?>
@@ -127,7 +127,7 @@ if (have_posts()) :
                        </div>
                      </div>
                      <div class="text-container">
-                           <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                           <div class="product-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                       </div>
                   </div>
               
