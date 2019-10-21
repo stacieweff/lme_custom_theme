@@ -2,12 +2,16 @@
   <div class="footer-nav-links">
     <nav id="footer-nav" class="footer-nav">
       <?php
-          $args = array(
-            'theme_location' => 'footer'
-          );
-          ?>
-          <?php wp_nav_menu( $args ); ?>
+        $args = array(
+          'theme_location' => 'footer'
+        );
+      ?>
+      <?php wp_nav_menu( $args ); ?>
     </nav>
+  </div>
+  <div>
+    <?php dynamic_sidebar('contactfooter') ?>
+    <!-- <div class="office-hours">Our Office Hours</div> -->
   </div>
 
   <div class="footer-company-info">

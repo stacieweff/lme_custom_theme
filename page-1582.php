@@ -5,8 +5,8 @@ if (have_posts()) :
 
   <article class="post page">
     <div class="page-wrapper">
-      <?php if ( has_children() OR $post->post_parent > 0 ) { ?>
-          <nav class="site-nav children-links clearfix">
+      <!-- <?php if ( has_children() OR $post->post_parent > 0 ) { ?>
+        <nav class="site-nav children-links clearfix">
           <span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()) ?>"><?php echo get_the_title(get_top_ancestor_id()) ?></a></span>
           <ul>
             <?php
@@ -18,7 +18,7 @@ if (have_posts()) :
               <?php wp_list_pages($args) ?>
           </ul>
         </nav>
-        <?php } ?>
+      <?php } ?> -->
 
         <div class="content-page">
           <div class="title-column">
@@ -33,7 +33,7 @@ if (have_posts()) :
       <!-- <div class="page-content-custom"> -->
         <div class="custom-content-container">
           <div class="left-content">
-            <h2>Recent Product News</h2>
+            <h2>Featured Equipment</h2>
             <div class="products-container">
                   <?php
                   //products posts start here
@@ -43,7 +43,7 @@ if (have_posts()) :
                       'post_type' => 'post',
                       'post_status' => 'publish',
                       'category_name' => 'products',
-                      'posts_per_page' => 15,
+                      'posts_per_page' => 10,
                       'paged' => $paged,
                   );
                   $productPosts = new WP_Query( $args );
@@ -55,7 +55,7 @@ if (have_posts()) :
                             </div>
                           </div>
                           <div class="text-container">
-                                <div class="news-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                                <div class="product-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                             </div>
                         </div>
                     <?php endwhile;
@@ -72,23 +72,47 @@ if (have_posts()) :
                               );
                               ?>
 
-<?php
-    // query for the about page
-    //$your_query = new WP_Query( 'pagename=equipment' );
-    // "loop" through query (even though it's just one page) 
-    //while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
-    <!-- <h2>Vendors</h2>     -->
-    <!-- <?php //the_content();
-    //endwhile;
-    // reset post data (important!)
-    //wp_reset_postdata();
-?>
             </div>
-            <!-- <div class="right-content">
-              <div class="testing-this">
-                <?php dynamic_sidebar('contact') ?>
-              </div>
-            </div> -->
+
+
+            <h2>Vendors</h2>
+            <p>In addition to the items listed, we also sell a variety of products from the following suppliers:</p>
+            <div class="vendor-container">
+                  <?php
+                  //vendor posts start here
+                  // $vendorPosts = new WP_Query('cat=4');
+                  // $pagedVendors = (get_query_var( 'pagedVendors' )) ? get_query_var( 'pagedVendors' ) : 1;
+                  // $args = array(
+                  //     'post_type' => 'post',
+                  //     'post_status' => 'publish',
+                  //     'category_name' => 'vendors',
+                  //     'posts_per_page' => 40,
+                  //     'pagedVendors' => $pagedVendors,
+                  // );
+                  $vendorPosts = new WP_Query( 'cat=19&posts_per_page=-1' );
+                  if ($vendorPosts->have_posts()) :
+                    while ($vendorPosts->have_posts()) : $vendorPosts->the_post(); ?>
+                        <div class="vendor-block">
+                          <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
+                            <div class="background-thumbnail"><a href="<?php echo get_the_excerpt() ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                            </div>
+                          </div>
+                        </div>
+                    <?php endwhile;
+                      else :
+                        echo '<p>No content found</p>';
+                      endif;
+                      wp_reset_postdata();
+                    ?>
+                    </div>
+                    <!-- <?php //wp_pagenavi(
+                              //     array(
+                              //         'query' => $vendorPosts,
+                              //     )
+                              // );
+                              ?> -->
+
+            </div>
           </div>
         </div>
     </div>

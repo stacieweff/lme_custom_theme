@@ -5,9 +5,8 @@
     <div class="category-posts-section">
       <?php if (have_posts()) : while (have_posts()) : the_post();?>
       <article class="category-post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
-        <!--post thumbnail-->
         <div class="post-thumbnail">
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium-thumbnail'); ?></a>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large-thumbnail'); ?></a>
         </div>
         <div class="post-content">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -49,9 +48,9 @@
       endif; ?>
       <?php posts_nav_link(' &#8212; ', __('&laquo; Previous Page'), __('Next Page &raquo;')); ?>
     </div>
-    <div class="sidebar-categories">
+    <!-- <div class="sidebar-categories">
       <?php get_sidebar() ?>
-    </div>
+    </div> -->
   </div>
 </div>
 <div class="background-image-stripe"> </div>
