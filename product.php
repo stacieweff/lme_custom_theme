@@ -70,6 +70,36 @@ if (have_posts()) :
                             )
                         );
                         ?>
+
+          <div class="vendor-container">
+              <?php
+              global $post;
+              $post_slug = $post->post_name;
+              $args = array(
+                'category' => $post_slug,
+                'tag' => $post_slug,
+                'posts_per_page' => -1
+              );
+              $featuredVendorsPosts = new WP_Query($args);
+                    if ($featuredVendorsPosts->have_posts()) :
+                      while ($featuredVendorsPosts->have_posts()) : $featuredVendorsPosts->the_post(); ?>
+
+                  <div class="vendor-block">
+                     <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
+                       <div class="background-thumbnail"><a href="<?php echo get_the_excerpt() ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
+                       </div>
+                     </div>
+                   </div>
+
+                      <?php endwhile;
+
+                    else :
+                      echo '';
+
+                    endif;
+                    wp_reset_postdata();
+              ?>
+        </div>
     </div>
 
     <?php if (is_page(93)) { ?>
