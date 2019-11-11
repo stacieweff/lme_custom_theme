@@ -1152,11 +1152,34 @@ h2.widget-title {
 }
 
 @media only screen and (max-width: 415px) {
+  .logo-area img {
+    max-width: 15%;
+    height: auto;
+  }
+  .company-container {
+    display: block;
+  }
+  .company-info {
+    margin-left: 0;
+    font-size: 13px;
+  }
+  .company-name {
+    font-size: 25px;
+  }
+  .search-n-stuff {
+    display: block;
+  }
   .news-block-wrapper {
     margin: 10px;
   }
   .news-block {
     height: 200px;
+  }
+  .apparatus-dealer-wrapper {
+    padding: 10px;
+  }
+  .vendor-wrapper {
+    margin: 10px;
   }
   .right-header {
     align-items: center;
@@ -1167,8 +1190,17 @@ h2.widget-title {
   .menu-footer-menu-links-container {
     display: none;
   }
+  .contact-information-footer {
+    display: block;
+  }
   .footer-company-info {
     flex-direction: column;
+  }
+  .office-hours {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-left: none;
+    border-top: 1px solid #fff;
   }
   .content-wrapper-cat {
     padding: 0;
