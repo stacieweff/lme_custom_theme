@@ -848,6 +848,10 @@ h1 {
   width: auto;
 }
 
+.wp-block-button {
+  margin: 25px 0;
+}
+
 /* .wp-block-image {
   max-width: 100%;
   margin-bottom: 1em;
@@ -1073,33 +1077,17 @@ h2.widget-title {
 
 
 /*mobile*/
-
-
 @media only screen and (max-width: 1246px) {
   .main-image-widget {
-    top: 160px;
     padding: 25px;
+  }
+
+  .site-header {
+    display: block;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .main-image-widget {
-    padding: 10px;
-    right: 0;
-    top: 141px;
-  }
-  .content-wrapper-cat {
-    margin: 12px 25px;
-  }
-  .category-content {
-    display: inline;
-  }
-  #main-nav li a {
-    padding: 0 20px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .main-image-widget {
     padding: 15px;
     position: inherit;
@@ -1143,7 +1131,31 @@ h2.widget-title {
   }
   .content-wrapper-cover-page {
     margin: 0;
-    padding: 0 15px;
+    padding: 0 5px;
+  }
+  .content-wrapper-text {
+    padding: 1px 25px;
+    margin: 10px;
+  }
+  .content-wrapper-cat {
+    padding: 1px 25px;
+    margin: 10px;
+  }
+  .category-content {
+    display: inline;
+  }
+  .category-post {
+    border: 1px solid #cecece;
+    margin: 20px 0;
+    overflow: hidden;
+    display: block;
+    height: auto;
+  }
+  .post-thumbnail {
+    min-width: 230px;
+    max-width: 100%;
+    max-height: 200px;
+    overflow: hidden;
   }
   .alignwide {
     margin-left: -15px;
@@ -1203,7 +1215,8 @@ h2.widget-title {
     border-top: 1px solid #fff;
   }
   .content-wrapper-cat {
-    padding: 0;
+    padding: 1px 25px;
+    margin: 5px;
   }
   .category-post {
     border: 1px solid #cecece;
@@ -1226,8 +1239,8 @@ h2.widget-title {
     margin-right: 5px;
   }
   .content-wrapper-text {
-    padding: 0 25px;
-    margin: 0;
+    padding: 1px 25px;
+    margin: 5px;
   }
   .alignwide {
     margin-left: -5px;
