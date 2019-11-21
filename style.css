@@ -147,7 +147,7 @@ input#searchsubmit {
 }
 #main-nav a:hover {
   background-color: #F4F6F9;
-  font-weight: bold;
+  color: #333;
 }
 
 #main-nav ul ul {
