@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
 
-<div class="container">
+<div class="container"><!-- div ends in footer.php -->
   <header class="site-header">
     <div class="company-container">
       <div class="logo-area">
