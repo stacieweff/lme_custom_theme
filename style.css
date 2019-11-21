@@ -1151,6 +1151,13 @@ h2.widget-title {
     display: block;
     height: auto;
   }
+  .content-post {
+    display: block;
+    border: 1px solid #cecece;
+    margin: 5px;
+    height: auto;
+    overflow: hidden;
+  }
   .post-thumbnail {
     min-width: 230px;
     max-width: 100%;
@@ -1160,6 +1167,22 @@ h2.widget-title {
   .alignwide {
     margin-left: -15px;
     margin-right: -15px;
+  }
+  .search-n-stuff {
+    justify-content: center;
+  }
+  .facebook {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .company-name {
+    font-size: 28px;
+  }
+
+  .main-search {
+    display: none;
   }
 }
 
@@ -1176,7 +1199,7 @@ h2.widget-title {
     font-size: 13px;
   }
   .company-name {
-    font-size: 25px;
+    font-size: 22px;
   }
   .search-n-stuff {
     display: block;
