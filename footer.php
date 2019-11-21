@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <div class="footer-nav-links">
+  <div>
     <nav id="footer-nav" class="footer-nav">
       <?php
         $args = array(

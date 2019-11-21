@@ -5,7 +5,6 @@ Version: 1.0
 */
 
 body {
-  /* font-family: Arial, sans-serif; */
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #808080;
@@ -57,7 +56,6 @@ article.post:last-of-type {
 
 .company-name a:link,
 .company-name a:visited {
-  /* color: #808080; */
   color: #c59e55;
   text-decoration: none;
 }
@@ -71,13 +69,10 @@ article.post:last-of-type {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
 }
 
 /*search*/
 .main-search {
-  /* position: absolute;
-  top: 40px; */
   margin-right: 15px;
 }
 
@@ -109,28 +104,21 @@ input#searchsubmit {
 /*Navigtion Menus*/
 
 #main-nav {
-  /* height: 50px; set to the height you want your menu to be */
   margin: 0 0 10px;
-  /* just to give some spacing */
 }
 
 #main-nav ul {
   margin: 0;
   padding: 0;
-  /* only needed if you have not done a CSS reset */
 }
 
 #main-nav li {
   display: block;
   float: left;
   line-height: 30px;
-  /* this should be the same as your #main-nav height */
-  /* height: 50px; this should be the same as your #main-nav height */
   margin: 0;
   padding: 0;
-  /* only needed if you don't have a reset */
   position: relative;
-  /* this is needed in order to position sub menus */
   font-size: 18px;
   font-weight: 500;
 }
@@ -149,7 +137,6 @@ input#searchsubmit {
 #main-nav .current-menu-item,
 #main-nav .current_page_item {
   color: #868481;
-  /* background: #ccc; */
   border-bottom: 2px solid #a12026;
   text-decoration: none;
   font-weight: 600;
@@ -159,18 +146,13 @@ input#searchsubmit {
   color: #333;
 }
 #main-nav a:hover {
-  /* border-bottom: 1px solid  #a12026; */
   background-color: #F4F6F9;
   font-weight: bold;
 }
 
 #main-nav ul ul {
-  /* this targets all sub menus */
   display: none;
-  /* hide all sub menus from view */
   position: absolute;
-  /* top: 38px; */
-  /* this should be the same height as the top level menu -- height + padding + borders */
   z-index: 99;
   right: 0;
   width: 200px
@@ -180,19 +162,13 @@ input#searchsubmit {
   min-width: 125px;
   border-bottom: 1px solid #ccc;
   font-size: 14px;
-  /* this targets all submenu items */
   float: none;
-  /* overwriting our float up above */
-  /* width: 340px; */
-  /* set to the width you want your sub menus to be. This needs xto match the value we set below */
 }
 
 #main-nav ul ul li a {
-  /* target all sub menu item links */
   padding: 10px 5px;
   line-height: 15px;
   height: auto;
-  /* give our sub menu links a nice button feel */
 }
 
 #main-nav ul ul li a:hover {
@@ -201,136 +177,17 @@ input#searchsubmit {
 
 #main-nav ul li:hover>ul {
   display: block;
-  /* show sub menus when hovering over a parent */
 }
 
 #main-nav ul ul li ul {
-  /* target all second, third, and deeper level sub menus */
   left: 340px;
-  /* this needs to match the sub menu width set above -- width + padding + borders */
   top: 0;
-  /* this ensures the sub menu starts in line with its parent item */
 }
 
 .sub-menu {
   background-color: #F4F6F9;
   border: 1px solid #eee;
-  /* width: 350px; */
 }
-
-/* ul.sub-menu {
-  border: 1px solid #eee;
-  width: 350px;
-} */
-
-/* .site-nav ul {
-  margin: 0;
-  padding: 0;
-}
-.site-nav a:hover {
-  background-color: #ECECEC
-}
-.site-nav ul:before, .site-nav ul:after {
-  content: "";
-  display: table;
-}
-.site-nav ul:after {
-  clear: both;
-}
-.site-nav ul li {
-  list-style: none;
-  float: left;
-  position: relative;
-  margin-right: 5px;
-}
-.site-nav ul li a:link,
-.site-nav ul li a:visited {
-  display: block;
-  padding: 10px 18px;
-  border: 1px solid #BBB;
-  border-bottom: none;
-  text-decoration: none;
-}
-
-.site-nav ul li ul {
-	display: none;
-}
-.site-nav ul li:hover ul {
-	background: #fff url(images/tab-bg3.gif) repeat-x bottom;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	box-shadow: 0 4px 5px rgba(0,0,0,0.3);
-	display: block;
-	padding: 5px 10px;
-	position: absolute;
-	left: 0px;
-	top: 38px;
-	width: 150px;
-  z-index: 999;
-  color: yellow;
-}
-
-.site-nav ul li.current-menu-item a:link,
-.site-nav ul li.current-menu-item a:visited,
-.site-nav ul li.current-page-ancestor a:link,
-.site-nav ul li.current-page-ancestor a:visited {
-  background-color: red;
-  color: #fff;
-} */
-
-/* --------------------- */
-/* .site-nav ul li.current-menu-item ul.sub-menu li a:link {
-  background-color: green;
-} */
-
-/* 
-.site-nav ul li.current_page_item a:link {
-  background-color: #006ec3;
-  color: #fff;
-}
-
-.site-nav ul li.menu-item-type-taxonomy .current-menu-item a:link,
-.site-nav ul li.menu-item-type-taxonomy .current-menu-item a:visited {
-  background-color: #006ec3;
-  color: #fff;
-}  */
-
-/* .site-nav ul li.current-menu-item ul li a:link {
-  color: pink;
-} */
-
-/* .site-nav ul li:hover:last-child ul {
-	left: auto;
-	right: 0px;
-} */
-
-/* .site-nav ul li ul li a:link {
-  color: yellow;
-} */
-
-/* .site-nav ul li:hover ul li a:link {
-	background: none !important;
-	border-bottom: 1px solid #efefef;
-	color: #222;
-	display: block;
-	float: left;
-	font: 10px/14px helvetica, arial, sans-serif;
-	font-weight: bold;
-	margin: 0px;
-	padding: 5px  0 5px;
-	position: relative;
-  width: 150px;
-  color: yellow;
-} */
-
-/* .site-nav ul li:hover ul li:last-child a {
-	border-bottom: none;
-} */
-
-/* .site-nav ul li:hover ul li a:hover {
-  color: #333;
-  font-weight: bold;
-} */
 
 .site-nav ul {
   margin: 0;
@@ -358,15 +215,10 @@ input#searchsubmit {
 
 /*children links*/
 .children-links {
-  /* margin-bottom: 20px; */
-  /* margin: 0 50px;
-  font-size: 80%; */
   padding: 15px 50px;
-  /* font-size: 80%; */
   position: absolute;
   z-index: 98;
   background: rgba(255,255,255,0.8);
-  /* width: 100%; */
 }
 
 .children-links a:link,
@@ -377,7 +229,6 @@ input#searchsubmit {
 
 .children-links a:link:hover,
 .children-links a:visited:hover {
-  /* text-decoration: underline; */
   border-bottom: 1px solid #a12026;
   color: #333;
 }
@@ -408,7 +259,6 @@ input#searchsubmit {
 .children-links .current_page_item a:link,
 .children-links .current_page_item a:visited {
   border-bottom: 1px solid #a12026;
-  /* text-decoration: underline; */
   color: #333;
   cursor: default;
 }
@@ -438,11 +288,7 @@ input#searchsubmit {
   margin: 5px 5px 10px 5px;
 }
 
-/* .site-header nav ul li.current-menu-item a:link, */
-/* .site-header nav ul li.current-menu-item a:visited, */
 .site-header nav ul li.current-page-ancestor a:link {
-  /* .site-header nav ul li.current-page-ancestor a:visited { */
-  /* background: #ccc; */
   color: #868481;
   border-bottom: 1px solid #a12026;
   text-decoration: none;
@@ -458,16 +304,7 @@ input#searchsubmit {
 }
 
 .site-footer nav ul li {
-  /* margin-right: 10px;
-  padding-right: 10px;
-  border-right: 1px dotted #bbb; */
   list-style: none;
-}
-
-.footer-nav-links {
-  /* padding-bottom: 25px;
-  display: flex;
-  justify-content: center; */
 }
 
 .site-footer nav ul li a:link,
@@ -480,14 +317,11 @@ input#searchsubmit {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
-  /* padding: 0 150px 25px; */
   margin-bottom: 25px;
   text-align: center;
 }
 
 ul#menu-footer-menu-links {
-  /* display: flex;
-  flex-wrap: wrap; */
   font-size: 16px;
   margin-block-start: auto;
   margin-block-end: auto;
@@ -506,7 +340,6 @@ ul#menu-footer-menu-links {
 .footer-left {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .footer-right {
@@ -527,11 +360,7 @@ ul#menu-footer-menu-links {
 
 .contact-us-section-footer {
   display: flex;
-  /* justify-content: space-between; */
-  /* z-index: 3; */
   flex-wrap: wrap;
-  /* padding: 25px 0;
-  border-top: 1px solid #fff; */
 }
 
 .office-hours {
@@ -547,7 +376,6 @@ ul#menu-footer-menu-links {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* width: 340px; */
 }
 
 .contact-icon-footer {
@@ -620,7 +448,6 @@ a.home-button:hover {
 }
 
 /*post styles*/
-
 .post h2 {
   margin-bottom: 0;
 }
@@ -649,13 +476,9 @@ img {
 
 .has-thumbnail {
   position: relative;
-  /* padding-left: 200px; */
 }
 
 .post-thumbnail {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   min-width: 260px;
   max-width: 260px;
 }
@@ -689,11 +512,8 @@ h1 {
 .news-block {
   width: 300px;
   height: 225px;
-  /* padding: 17px; */
-  /* overflow-y: auto; */
   overflow: hidden;
   margin: 20px;
-  /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #eee;
   position: relative;
 }
@@ -752,7 +572,6 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 25px;
-  /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #fff;
 }
 
@@ -780,7 +599,6 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 25px;
-  /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #eee;
 }
 
@@ -791,23 +609,12 @@ h1 {
 
 .page-content {
   margin: 50px 100px 0;
-  /* font-size: 16px; */
   background-color: #fff;
 }
 
 .page-content-custom {
   margin: 0 100px 50px;
 }
-
-/* .content-wrapper { */
-  /* margin: 0 75px; */
-  /* font-size: 16px;
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px; */
-  /* background-color: #fff; */
-/* } */
 
 .content-wrapper-cover-page {
   font-size: 16px;
@@ -844,7 +651,6 @@ h1 {
 }
 
 .wp-block-cover {
-  /* top: 10px; */
   width: auto;
 }
 
@@ -852,30 +658,9 @@ h1 {
   margin: 25px 0;
 }
 
-/* .wp-block-image {
-  max-width: 100%;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
-
-/* .wp-block-image .aligncenter {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 166px;
-} */
-
 .background-image-stripe {
   background-color: #e4e4e4;
   background-image: linear-gradient(0deg, black, gray);
-  /* height: 430px; */
-  /* height: 230px; */
   height: 185px;
   position: absolute;
   z-index: -1;
@@ -885,14 +670,12 @@ h1 {
 
 /* category page styles */
 .category-content {
-  /* margin: 50px; */
   display: flex;
 }
 
 .category-post {
   display: flex;
   align-items: center;
-  /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #cecece;
   margin: 20px;
   height: 165px;
@@ -905,7 +688,6 @@ h1 {
 }
 
 .post-content {
-  /* margin-left: 20px; */
   padding: 25px;
   overflow: auto;
   height: 100%;
@@ -936,7 +718,6 @@ h1 {
   height: 225px;
   overflow: hidden;
   margin: 20px;
-  /* box-shadow: 2px 4px 5px #cecece; */
   border: 1px solid #eee;
 }
 
@@ -977,7 +758,6 @@ h1 {
 .content-post {
   display: flex;
   align-items: center;
-  /* box-shadow: 3px 4px #999; */
   border: 1px solid #cecece;
   margin: 5px;
   height: 160px;
@@ -994,15 +774,12 @@ h1 {
 }
 
 /*page-wrapper Products*/
-.page-wrapper {
-  /* position: relative; */
-}
 .content-page {
   margin-top: 5px;
   margin-right: 125px;
   margin-left: 125px;
-  /* margin-bottom: 50px; */
 }
+
 /*pagenavi plugin*/
 .wp-pagenavi {
   text-align: center;
@@ -1028,7 +805,6 @@ h1 {
   justify-content: space-between;
   z-index: 3;
   flex-wrap: wrap;
-  /* margin: 25px; */
 }
 
 .contact-info {
@@ -1121,8 +897,6 @@ h2.widget-title {
     margin-top: 5px;
   }
   .menu-footer-menu-links-container {
-    /* padding: 0 25px 25px; */
-    /* text-align: center; */
     column-count: 2;
   }
   .content-page {
@@ -1272,10 +1046,6 @@ h2.widget-title {
   .children-links {
     display: none;
   }
-  /* #main-nav ul ul {
-    right: 0;
-    left: 0;
-  } */
   #main-nav ul ul li {
     min-width: auto;
   }
