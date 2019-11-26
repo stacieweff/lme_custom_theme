@@ -8,27 +8,8 @@ if (have_posts()) :
   while (have_posts()) : the_post(); ?>
 
   <article class="post page">
-    <!-- <?php if ( has_children() OR $post->post_parent > 0 ) { ?>
-      <nav class="site-nav children-links clearfix">
-        <span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id()) ?>"><?php echo get_the_title(get_top_ancestor_id()) ?></a></span>
-        <ul>
-          <?php
-            $args = array(
-              'child_of' => get_top_ancestor_id(),
-              'title_li' => ''
-            )
-            ?>
-            <?php wp_list_pages($args) ?>
-        </ul>
-      </nav>
-    <?php } ?> -->
     <div class="content-page">
         <?php the_content(); ?>
-
-        <!-- <div class="testing-this">
-        <?php dynamic_sidebar('productnav') ?>
-        </div> -->
-
           <?php
             //products posts start here
             $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
@@ -111,8 +92,6 @@ if (have_posts()) :
                     if ($appdealersPosts->have_posts()) :
                       while ($appdealersPosts->have_posts()) : $appdealersPosts->the_post(); ?>
 
-
-
                   <div class="apparatus-dealer-block">
                      <div class="post <?php if ( has_post_thumbnail() ) { ?>has-thumbnail <?php } ?>">
                        <div class="background-thumbnail"><a href="<?php echo get_the_excerpt() ?>" target="_blank"><?php the_post_thumbnail('small-thumbnail'); ?></a>
@@ -130,8 +109,6 @@ if (have_posts()) :
               ?>
         </div>
       </div>
-
-
 
 
             <?php
@@ -176,8 +153,6 @@ if (have_posts()) :
                         ?>
         <?php }?>
         <p class="thank-you">Thank you for your business!</p>
-
-
 
   </article>
 

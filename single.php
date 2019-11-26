@@ -27,7 +27,6 @@ if (have_posts()) :
       ?>
     </p>
 
-    <!-- <?php the_post_thumbnail('banner-image'); ?> -->
     <?php the_content(); ?>
     </div>
     <div class="background-image-stripe"> </div>
