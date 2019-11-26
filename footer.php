@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <div class="footer-nav-links">
+  <div>
     <nav id="footer-nav" class="footer-nav">
       <?php
         $args = array(
@@ -11,7 +11,6 @@
   </div>
   <div>
     <?php dynamic_sidebar('contactfooter') ?>
-    <!-- <div class="office-hours">Our Office Hours</div> -->
   </div>
 
   <div class="footer-company-info">
@@ -28,7 +27,7 @@
     </div>
   </div>
 </footer>
-</div> <!--end container-->
+</div> <!--end container started in header-->
 
 <?php wp_footer(); ?>
 

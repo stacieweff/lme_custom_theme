@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
 
-<div class="container">
+<div class="container"><!-- div ends in footer.php -->
   <header class="site-header">
     <div class="company-container">
       <div class="logo-area">
@@ -21,8 +21,7 @@
         <div class="company-name">
           <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
-        <div class="phone-number"><?php bloginfo('description'); ?></div>
-        <!-- <div class="phone-number">(636) 332-6985</div> -->
+        <div><?php bloginfo('description'); ?></div>
         <div class="social-icons">
           <div class="facebook"><?php dynamic_sidebar('socialheader') ?></div>
           <!-- <div class="twitter">T</div>
