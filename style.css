@@ -7,7 +7,7 @@ Version: 1.0
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: #808080;
+  color: #333;
   margin: 0;
 }
 
@@ -46,7 +46,7 @@ article.post:last-of-type {
   flex-direction: column;
   margin-left: 15px;
   justify-content: center;
-  color: #808080;
+  color: #333;
   font-size: 16px;
 }
 
@@ -54,9 +54,14 @@ article.post:last-of-type {
   font-size: 35px;
 }
 
+.company-description {
+  color: #000;
+  font-style: italic;
+}
+
 .company-name a:link,
 .company-name a:visited {
-  color: #c59e55;
+  color: #a12026;
   text-decoration: none;
 }
 
@@ -77,7 +82,7 @@ article.post:last-of-type {
 }
 
 form#searchform {
-  color: #dedede;
+  color: #999;
 }
 
 input#s {
@@ -88,7 +93,7 @@ input#s {
 }
 
 input#searchsubmit {
-  background-color: #dedede;
+  background-color: #999;
   border: none;
   padding: 5px 10px;
   color: #fff;
@@ -128,7 +133,7 @@ input#searchsubmit {
   height: 30px;
   line-height: 30px;
   padding: 0 40px;
-  color: #868481;
+  color: #000;
   text-decoration: none;
   border-bottom: none;
   margin-bottom: 5px;
@@ -137,17 +142,17 @@ input#searchsubmit {
 #main-nav .current-menu-item,
 #main-nav .current_page_item {
   color: #868481;
-  border-bottom: 2px solid #a12026;
+  border-bottom: 1px solid #a12026;
   text-decoration: none;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 #main-nav .current-menu-item, 
 #main-nav .current_page_item a {
   color: #333;
 }
 #main-nav a:hover {
-  background-color: #F4F6F9;
-  color: #333;
+  /* background-color: #F4F6F9; */
+  color: #a12026;
 }
 
 #main-nav ul ul {
@@ -169,10 +174,19 @@ input#searchsubmit {
   padding: 10px 5px;
   line-height: 15px;
   height: auto;
+  color: #000;
+}
+
+#main-nav ul ul li a:active {
+  padding: 10px 5px;
+  line-height: 15px;
+  height: auto;
+  color: #a12026;
 }
 
 #main-nav ul ul li a:hover {
   background-color: #fff;
+  color: #a12026;
 }
 
 #main-nav ul li:hover>ul {
@@ -214,7 +228,7 @@ input#searchsubmit {
 }
 
 /*children links*/
-.children-links {
+/* .children-links {
   padding: 15px 50px;
   position: absolute;
   z-index: 98;
@@ -224,10 +238,10 @@ input#searchsubmit {
 .children-links a:link,
 .children-links a:visited {
   text-decoration: none;
-  color: #666;
-}
+  color: red;
+} */
 
-.children-links a:link:hover,
+/* .children-links a:link:hover,
 .children-links a:visited:hover {
   border-bottom: 1px solid #a12026;
   color: #333;
@@ -236,9 +250,9 @@ input#searchsubmit {
 
 .children-links ul {
   float: left;
-}
+} */
 
-.children-links li {
+/* .children-links li {
   margin-right: 20px;
 }
 
@@ -249,8 +263,8 @@ input#searchsubmit {
   border-right: 1px solid #333;
   font-size: 120%;
   font-weight: bold;
-}
-
+} */
+/* 
 .children-links .parent-link a:link,
 .children-links .parent-link a:visited {
   color: #333;
@@ -261,7 +275,7 @@ input#searchsubmit {
   border-bottom: 1px solid #a12026;
   color: #333;
   cursor: default;
-}
+} */
 
 /*Site Header Menu*/
 .site-header {
@@ -292,7 +306,7 @@ input#searchsubmit {
   color: #868481;
   border-bottom: 1px solid #a12026;
   text-decoration: none;
-  font-weight: 600;
+  /* font-weight: 600; */
   height: auto;
 }
 
@@ -496,6 +510,7 @@ h1 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  color: 000;
 }
 
 /*homepage*/
@@ -526,7 +541,7 @@ h1 {
 .news-block-heading a,
 .apparatus-dealer-header a,
 .vendor-header a {
-  color: #808080;
+  color: #333;
   text-decoration: none;
 }
 
@@ -545,7 +560,7 @@ h1 {
 
 .news-title a:link,
 .news-title a:visited {
-  color: #808080;
+  color: #333;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -581,7 +596,10 @@ h1 {
 }
 
 .vendor-wrapper {
-  margin: 50px;
+  /* margin: 50px; */
+  background-color: #e4e4e4;
+  padding: 50px;
+  margin-bottom: 50px;
 }
 
 .vendor-container {
@@ -732,7 +750,7 @@ h1 {
 
 .product-title a:link,
 .product-title a:visited {
-  color: #808080;
+  color: #333;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
@@ -950,6 +968,10 @@ h2.widget-title {
   }
 }
 
+.content-margin {
+  margin: 50px;
+}
+
 @media only screen and (max-width: 700px) {
   .company-name {
     font-size: 28px;
@@ -988,7 +1010,7 @@ h2.widget-title {
     padding: 10px;
   }
   .vendor-wrapper {
-    margin: 10px;
+    padding: 10px;
   }
   .right-header {
     align-items: center;
@@ -1048,5 +1070,8 @@ h2.widget-title {
   }
   #main-nav ul ul li {
     min-width: auto;
+  }
+  .content-margin {
+    margin: 10px;
   }
 }

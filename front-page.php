@@ -16,7 +16,7 @@
       </div>
     <?php endif; ?>
   </div><!--end main-image-->
-  <div class="home-columns clearfix">
+  <!-- <div class="home-columns clearfix">
     <div class="news-block-wrapper">
       <div class="news-block-heading">
         <h1><a href="./category/news/">Recent News</a></h1>
@@ -47,9 +47,9 @@
                  wp_reset_postdata();
             ?>
         </div>
-      </div>
+      </div> -->
 
-      <div class="apparatus-dealer-wrapper">
+      <!-- <div class="apparatus-dealer-wrapper">
         <div class="apparatus-dealer-header"><h1><a href="./products/find-an-apparatus">Apparatus Dealers</a></h1></div>
         <div class="apparatus-dealer-container">
               <?php
@@ -73,7 +73,7 @@
                     wp_reset_postdata();
               ?>
         </div>
-      </div>
+      </div> -->
 
       <div class="vendor-wrapper">
         <div class="vendor-header"><h1><a href="./equipment/">Featured Vendors</a></h1></div>
@@ -103,8 +103,10 @@
         </div>
       </div>
 
+      <?php show_page_post('home-news') ?>
 
-    </div>
+
+    <!-- </div> -->
 </div>
 
 <?php

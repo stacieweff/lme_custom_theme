@@ -15,13 +15,13 @@
   <header class="site-header">
     <div class="company-container">
       <div class="logo-area">
-        <img src="<?php site_icon_url() ?>" width="125px"/>
+        <a href="<?php echo home_url(); ?>"><img src="<?php site_icon_url() ?>" width="125px"/></a>
       </div>
       <div class="company-info">
         <div class="company-name">
           <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
         </div>
-        <div><?php bloginfo('description'); ?></div>
+        <div class="company-description"><?php bloginfo('description'); ?></div>
         <div class="social-icons">
           <div class="facebook"><?php dynamic_sidebar('socialheader') ?></div>
           <!-- <div class="twitter">T</div>

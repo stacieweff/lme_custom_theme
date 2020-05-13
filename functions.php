@@ -219,4 +219,10 @@ function mytheme_setup() {
   add_theme_support( 'align-wide' );
 }
 add_action( 'after_setup_theme', 'mytheme_setup' );
+
+function show_page_post($path) {
+  $post = get_page_by_path($path);
+  $content = apply_filters('the_content', $post->post_content);
+  echo $content;
+}
 ?>
